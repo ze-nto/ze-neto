@@ -1,0 +1,7 @@
+@use 'colors';
+@use '0_vendors/new' as color;
+
+body{
+    background-color: colors.$dark-bg;
+    color: color.$cor;
+}
