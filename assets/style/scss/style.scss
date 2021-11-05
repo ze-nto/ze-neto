@@ -1,10 +1,10 @@
 
-
-@import '0_vendors';
-@import '1_settings';
-@import '2_tools';
-@import '3_generics';
-@import '4_elements';
-@import '5_objects';
-@import '6_components';
-@import '7_helpers';
+@use '00_for_refactor' as refactor;
+@use '0_vendors' as vendors;
+@use '1_settings' as settings;
+@use '2_tools' as tools;
+@use '3_generics' as generics;
+@use '4_elements' as elements;
+@use '5_objects' as objects;
+@use '6_components' as components;
+@use '7_helpers' as helpers;

@@ -9,17 +9,17 @@ ITCC
 
 1 - Tools: funções e mixins
 
-2 - Genérico: estilos genéticos como resets e normalizes
-            - Define-se o box-sizin
+2 - Genérico: estilos genéricos como resets e normalizes
+            - Define-se o box-sizing
             - Normalize
-            - 
+
 3 - Elementos: estilização de elemntos HTML
 
-4 - Objetos: Padrões não cosméticos 
+4 - Objetos: Padrões não cosméticos, agnosticamente nomeados 
             - Grids
             - Containers
 
-5 - Componentes: peças de UI isoladas (menu dropdow, carousel)
+5 - Componentes: peças de UI isoladas (menu dropdow, carousel, button)
             - Elementos de UI: menus, carousels, slider
 
 6 - Trumps: utilitarios, helpers, sobrescritas e hacks
@@ -29,7 +29,7 @@ ITCC
 * Criação modular de componentes em vez de páginas
 * Uso e abuso de classes
 
-* Começa-se pelos estilos mais gerais e  genéricos, a partir daí acrecenta-se as camadas de estílos específicos
+* Começa-se pelos estilos mais gerais e genéricos, a partir daí acrecenta-se as camadas de estílos específicos
 * Regras com especificidade menor para alta especificidade
 
 

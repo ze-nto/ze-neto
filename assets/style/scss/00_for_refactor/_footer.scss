@@ -1,0 +1,41 @@
+.footer-container{
+  background-color: #2b3136;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+  color: #fff;
+  font-size: 1em;
+  height: 13vh;
+}
+
+
+.social{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.social li {
+  display: block;
+  margin: 0 10px;
+}
+
+.social li a{
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+  color: inherit;
+}
+
+.social li i{
+  color: inherit;
+}
+
+.social li:hover{
+  color: #198efc;
+  transform: scale(1.1);
+}
+
