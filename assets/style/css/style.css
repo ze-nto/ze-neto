@@ -269,12 +269,18 @@
   color: inherit;
 }
 
-.layout {
+.grid-structure {
   display: grid;
   grid-template-columns: minmax(250px, 400px) 1fr 1fr;
   grid-template-areas: "header header header" "profile contact contact" "footer footer footer";
 }
 
+@media (max-width: 600px) {
+  .grid-structure {
+    grid-template-columns: 1fr;
+    grid-template-areas: "header" "profile" "contact" "footer";
+  }
+}
 * {
   padding: 0;
   margin: 0;
@@ -623,6 +629,15 @@ template {
   display: none;
 }
 
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #fff;
+}
+
 .o-img {
   display: block;
   width: 100%;
@@ -643,6 +658,13 @@ template {
   flex-wrap: wrap;
   grid-area: contact;
 }
+@media (max-width: 600px) {
+  .c-card-list {
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+  }
+}
 
 .c-card {
   background-color: #fff;
@@ -653,6 +675,11 @@ template {
   min-width: 380px;
   min-height: 100px;
   margin: 20px;
+}
+@media (max-width: 600px) {
+  .c-card {
+    margin: 10px;
+  }
 }
 .c-card__text {
   font-family: Ruda;
@@ -675,9 +702,6 @@ template {
 }
 
 .c-header {
-  position: relative;
-}
-.c-header--small {
   position: relative;
 }
 
@@ -710,6 +734,21 @@ template {
   overflow: hidden;
   border-radius: 50%;
 }
+.c-profile__text {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  align-items: center;
+  color: #fff;
+}
+.c-profile__text span {
+  color: #000;
+}
+@media (max-width: 600px) {
+  .c-profile {
+    margin-top: 50px;
+  }
+}
 
 .c-contact-icon {
   font-size: 60px;
@@ -719,10 +758,12 @@ template {
 
 .c-navbar {
   display: flex;
+  text-decoration: none;
 }
 .c-navbar__item {
   display: block;
   margin: 0 20px;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=style.css.map */

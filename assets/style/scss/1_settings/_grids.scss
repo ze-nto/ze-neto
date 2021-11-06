@@ -1,9 +1,0 @@
-
-.layout{
-  display: grid;
-  grid-template-columns: minmax(250px, 400px) 1fr 1fr;
-  grid-template-areas: 
-    "header header header"
-    "profile contact contact"
-    "footer footer footer";
-}

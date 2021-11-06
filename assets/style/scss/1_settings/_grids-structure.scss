@@ -1,0 +1,23 @@
+
+.grid-structure{
+  display: grid;
+  grid-template-columns: minmax(250px, 400px) 1fr 1fr;
+  grid-template-areas: 
+    "header header header"
+    "profile contact contact"
+    "footer footer footer";
+}
+
+
+@media (max-width: 600px) {
+
+  .grid-structure{
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+      "header"
+      "profile"
+      "contact"
+      "footer";
+  }
+  
+}

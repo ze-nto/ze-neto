@@ -1,8 +1,11 @@
 .c-navbar{
   display: flex;
+  text-decoration: none;
 
   &__item{
     display: block;
     margin: 0 20px;
+    text-decoration: none;
+
   }
 }
