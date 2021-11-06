@@ -1,0 +1,13 @@
+.c-profile{
+  grid-area: profile;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &__image{
+    width: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+}

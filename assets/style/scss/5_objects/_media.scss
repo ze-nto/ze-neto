@@ -1,0 +1,11 @@
+.o-media{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  
+
+  &__image-wrapper{
+    display: block;
+    margin: 20px;
+  }
+}

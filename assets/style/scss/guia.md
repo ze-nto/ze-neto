@@ -38,6 +38,70 @@ BEM - Padrão de Nomenclatura
 
 Nome do Bloco + 2 underlines + nome do Elemento: .[Bloco]__[Elemento].
 
-OOCSS
-Como características visuais entenda como cores, títulos, bordas, gradientes e outros
-características de estrutura são tamanhos, espaçamentos.
+ @<breakpoint>, and tell us this class when at this size:
+ The most common types of namespace are c-, for Components, o-, for Objects, u-, for Utilities, and is-/has- for States 
+
+ /**
+ * Outline all classes.
+ */
+[class] {
+  outline: 5px solid lightgrey;
+}
+
+/**
+ * Outline all BEM Elements.
+ */
+[class*="__"] {
+  outline: 5px solid grey;
+}
+
+/**
+ * Outline all BEM Modifiers.
+ */
+[class*="--"] {
+  outline: 5px solid darkgrey;
+}
+
+/**
+ * Outline all Object classes.
+ */
+[class^="o-"],
+[class*=" o-"] {
+  outline: 5px solid orange;
+}
+
+/**
+ * Outline all Component classes.
+ */
+[class^="c-"],
+[class*=" c-"] {
+  outline: 5px solid cyan;
+}
+
+/**
+ * Outline all Responsive classes.
+ */
+[class*="@"] {
+  outline: 5px solid rosybrown;
+}
+
+/**
+ * Outline all Hack classes.
+ */
+[class^="_"] {
+  outline: 5px solid red;
+}
+
+
+When I’m building a new object, the first thing I do is to figure out which parts are reusable components, and define what I know and do not know about them.
+
+what do we know?
+Can be nested
+Optional right button
+Must clearfix
+
+It is equally important to define what is flexible, or unknown, about a new object.
+
+Image width, margins, and decoration vary
+Right content is unknown
+Width unknown

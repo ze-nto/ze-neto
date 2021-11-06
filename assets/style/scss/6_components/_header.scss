@@ -1,5 +1,4 @@
-
-/* Apenas um teste */
+@use '../1_settings/colors' as colors;
 
 .c-header{
     position: relative;
@@ -9,4 +8,17 @@
 
     }
 
+}
+
+
+.c-header--small{
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px;
+    background: colors.$DARK-GRADIENT;
+    box-shadow: 2px 2px 3px rgba($color: rgb(56, 55, 55), $alpha: .5);
+    height: 4em;
+    color: colors.$WHITE;
 }

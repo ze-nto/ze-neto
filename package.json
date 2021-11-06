@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "sass": "sass --watch assets/style/scss/style.scss:assets/style/css/style.css"
+  },
   "devDependencies": {
     "browser-sync": "^2.27.5",
     "gulp": "^4.0.2",

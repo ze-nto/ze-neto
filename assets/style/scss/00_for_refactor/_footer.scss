@@ -1,4 +1,4 @@
-.footer-container{
+.footer{
   background-color: #2b3136;
   display: flex;
   align-items: center;
@@ -10,32 +10,34 @@
 }
 
 
-.social{
+.footer__social{
   display: flex;
   align-items: center;
   justify-content: center;
+ 
+  li {
+    display: block;
+    margin: 0 10px;
+    
+    &:hover{
+      color: #198efc;
+      transform: scale(1.1);
+    }
+    
+  }
+
+  li a{
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  li i{
+    color: inherit;
+  }
 }
 
 
-.social li {
-  display: block;
-  margin: 0 10px;
-}
-
-.social li a{
-  font-family: Arial, Helvetica, sans-serif;
-  cursor: pointer;
-  font-weight: bold;
-  text-decoration: none;
-  color: inherit;
-}
-
-.social li i{
-  color: inherit;
-}
-
-.social li:hover{
-  color: #198efc;
-  transform: scale(1.1);
-}
 

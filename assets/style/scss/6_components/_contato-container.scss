@@ -1,0 +1,6 @@
+@use '../1_settings/colors' as color;
+
+.c-contato-container{
+  background: color.$BLUE-BACKGROUND;
+  min-height: 100vh;
+}
