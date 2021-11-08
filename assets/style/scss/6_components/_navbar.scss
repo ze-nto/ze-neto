@@ -1,7 +1,13 @@
 .c-navbar{
   display: flex;
+  flex-wrap: wrap;
   text-decoration: none;
+  max-width: 50%;
 
+  @media (max-width: 600px){
+    display: none;
+  }
+  
   &__item{
     display: block;
     margin: 0 20px;
