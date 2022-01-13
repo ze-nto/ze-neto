@@ -1,7 +1,7 @@
-@use '../1_settings/colors' as color;
+@use '../1_settings/colors';
 
 .c-contato-container{
-  background: color.$BLUE-BACKGROUND;
+  background: $blue-gradient;
   min-height: 100vh;
-  min-width: 100vw;
+  max-width: 100vw;
 }

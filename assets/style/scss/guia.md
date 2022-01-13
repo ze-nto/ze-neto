@@ -18,6 +18,7 @@ ITCC
 4 - Objetos: Padrões não cosméticos, agnosticamente nomeados 
             - Grids
             - Containers
+            - Objects – class-based selectors which define undecorated design patterns, for example the media object known  from OOCSS
 
 5 - Componentes: peças de UI isoladas (menu dropdow, carousel, button)
             - Elementos de UI: menus, carousels, slider
@@ -105,3 +106,4 @@ It is equally important to define what is flexible, or unknown, about a new obje
 Image width, margins, and decoration vary
 Right content is unknown
 Width unknown
+

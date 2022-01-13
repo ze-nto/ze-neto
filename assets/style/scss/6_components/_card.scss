@@ -1,31 +1,37 @@
-@use '../1_settings/colors' as colors;
+@import '../1_settings/colors';
+
 .c-card-list{
   display: flex;
   flex-wrap: wrap;
   grid-area: contact;
-  // width: 100vw;
+  width: 100%;
+  justify-content: flex-start;
+  padding: 0 50px;
 
   
   @media (max-width: 600px) {
     align-items: center;
     justify-content: center;
     margin: 30px auto;
-    min-width: 100vw;
-    
+    width: 100vw;
   }
+
 }
 
 .c-card{
-  background-color: colors.$WHITE;
+  background-color: $white;
   border-radius: 5px;
-  border: 5px solid #00CDFF;
+  border: 5px solid $ligthblue;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);;
   padding: 10px;
   width: 380px;
   height: 100px;
+  margin: 10px;
+
+ 
 
   @media (max-width: 600px) {
-    max-width: 100vw;
+    width: 90vw;
     margin: 10px 0; 
     
   }
@@ -47,10 +53,10 @@
   &:hover{
     background-color: #636869;
     border-color: #484c4d;
-    color: #fff;
+    color: $white;
 
     .c-card__text h3, .c-card__text span, .c-contact-icon{
-      color: #fff;
+      color: $white;
     }
 
   }

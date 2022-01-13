@@ -1,18 +1,25 @@
-/* PROJECTS */
-
-
+@import '../1_settings/';
 
 .project-container{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   padding-top: 100px;
-  max-width: 95vw;
+  width: 95vw;
   margin: 0 auto;
+ 
+}
+
+.project-title{
+  text-align: center;
+  align-self: center;
+  margin-top: 50px;
+  font-size: 2em;
+  color:rgb(0, 116, 194)
 }
 
 .project{
-  margin: 50px 20px;
+  margin: 20px 20px;
   padding: 15px;
   width: 35vw;
   min-height: 40vh;
@@ -21,14 +28,18 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  border: 3px solid transparent;
   border-radius: 10px;
   box-shadow: 2px 2px 2px 2px rgba(182, 181, 184, 0.438);
   transition: all .3s;
+
+  @media(max-width: 600px){
+    width: 85vw;
+  }
 }
 
 .project:hover{
-  transform: scale(1.01);
-  z-index: 1;
+  border: 3px solid $ligthblue;
   box-shadow: 5x 5px 5px 5px rgba(54, 54, 54, 0.438);
   
 }
@@ -110,4 +121,15 @@
   border-radius: 5px;
   text-transform: uppercase;
   letter-spacing: 1px;
+  cursor: pointer;
+  border: 3px solid transparent;
+  transition: all .3s;
+
+  &:hover{
+    background: $ligthblue;
+    border: 3px solid $blue;
+    font-size: 17px;
+    box-shadow: 5x 5px 5px 5px rgba(54, 54, 54, 0.438);
+
+  }
 }

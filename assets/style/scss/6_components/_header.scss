@@ -1,7 +1,9 @@
-@use '../1_settings/colors' as colors;
+@use '../1_settings/colors';
 
 .c-header{
     position: relative;
+    max-width: 100vw;
+    grid-area: header;
 }
 
 .c-header--small{
@@ -10,12 +12,18 @@
     align-items: center;
     justify-content: space-between;
     padding: 0 25px;
-    background: colors.$DARK-GRADIENT;
+    background: $darkgrey-gradient;
     box-shadow: 2px 2px 3px rgba($color: rgb(56, 55, 55), $alpha: .5);
     height: 4em;
-    color: colors.$WHITE;
+    color: white;
 }
 
 .c-header__logo--small{
     max-width: 150px;
+}
+
+@media (max-width: 600px) {
+    .c-header__navlist{
+        display: none;
+    }
 }
