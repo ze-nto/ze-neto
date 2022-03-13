@@ -57,7 +57,7 @@ async function fetchFilteredProjects() {
 function createProjectCard(projects){
   projects.forEach( project => {
     if(project.mainImage == ""){
-      project.mainImage = "public/img/no-image.png"
+      project.mainImage = "./img/no-image.png"
     }
     const projectContainer = document.querySelector('.project-container')
     let card = document.createElement('article')
