@@ -1,0 +1,9 @@
+@import '../../1_settings/colors';
+
+.c-contato-container{
+  display: flex;
+  background: $blue-gradient;
+  background-size: 100% 100%;
+  width: 100%;
+  flex-grow: 1;
+}

@@ -8,9 +8,9 @@ const uglify = require('gulp-uglify')
 
 //Função que observa as mudanças nos arquivos
 function watch(){
-  gulp.watch('assets/style/sass/**/*.scss', sassCompile)
+  gulp.watch('./styles/sass/**/*.scss', sassCompile)
   gulp.watch('*.html').on('change', browserSync.reload)
-  gulp.watch(['assets/js/modules/*.js'], jsCompile)
+  gulp.watch(['./js/**/*.js'], jsCompile)
   
 }
 
@@ -26,27 +26,27 @@ function sync(){
 // Função para compilar o SASS e adicionar prefixos
 function sassCompile(){
   return gulp
-          .src('assets/style/sass/**/*.scss')
+          .src('./styles/sass/style.scss')
           .pipe(sass({
             outputStyle: 'compressed'
           }))
           .pipe(autoprefixer({
             cascade: false
           }))
-          .pipe(gulp.dest('assets/style/'))
+          .pipe(gulp.dest('./public'))
           .pipe(browserSync.stream())
 }
 
 //Função para concatenar o JS
 function jsCompile(){
   return gulp
-    .src('assets/js/modules/*.js')
+    .src(['js/classes/Slide.js', 'js/utils/*.js', 'js/*.js' ])
     .pipe(concat('main.js'))
     .pipe(babel({
       presets: ['@babel/preset-env']
     }))
     .pipe(uglify())
-    .pipe(gulp.dest('assets/js/'))  
+    .pipe(gulp.dest('public/'))  
     .pipe(browserSync.stream())   
 }
 

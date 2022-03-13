@@ -1,0 +1,56 @@
+@import '../../1_settings/';
+
+
+
+
+
+.about__section-container{
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px;
+}
+
+.category{
+  width: 200px;
+  font-weight: bold;
+
+    span{
+      margin-top: 10px;
+    }
+  
+    img{
+      width: 70px;
+      border: 2px solid $blue-2;
+      padding: 10px;
+      border-radius: 50%;
+    }
+  }
+
+.category__item{
+    margin-bottom: 10px;
+
+    &.flexmode{
+      display: flex;
+
+      p{
+        margin-top: 10px;
+      }
+    }
+    .local{
+      font-style: italic;
+    }
+  }
+  
+
+.ano{
+  display: inline-block;
+  min-width: 100px;
+  text-align: right;
+  margin-right: 10px;
+  margin-left: 10px;
+
+  &::after{
+    content: "|";
+    padding-left: 10px;
+  }
+}

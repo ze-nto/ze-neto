@@ -1,0 +1,30 @@
+details {
+  margin-bottom: 15px;
+  min-width: 100%;
+  position: relative;
+
+  p{
+    font-family: $type-1;
+    margin-left: 15px;
+    margin-top: 5px;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 10px;
+  }
+  
+  &[open]{
+    summary{
+      background-color: $blue-2;
+      opacity: .6;
+      line-height: 25px;
+      font-weight: bold;
+      color: $white;
+    }
+  }
+
+  summary{
+    min-width: 100%;
+    padding-left: 8px;
+    border-radius: 15px;
+  }  
+}

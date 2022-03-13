@@ -1,0 +1,33 @@
+@import '../../1_settings/';
+
+.about__pdfButton{
+  position: absolute;
+  right: -340px;
+  top: -60px;
+  border: none;
+  background-color: $blue-2;
+  color: $white;
+  font-weight: bold;
+  padding: 10px 20px ;
+  border-radius: 5px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: .5s;
+
+  &:active{
+    background-color: $white;
+  }
+  
+  .fas{
+    margin-right: 16px;
+  }
+}
+
+.showFullButton{
+  background-color: $blue-1;
+  color: $gray-4;
+  transform: translateX(-200px);
+}
+
+

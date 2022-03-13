@@ -1,0 +1,77 @@
+@import '../../1_settings/colors';
+
+.c-card-list{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  max-width: 450px;
+  margin: 120px auto;
+  background-color: rgba($white, 0.2);
+  border-radius: 20px;
+  border-top: 1px solid rgba($white, 0.5);
+  border-left: 1px solid rgba($white, 0.5);
+  backdrop-filter: blur(5px);
+  box-shadow: 20px 20px 20px rgba($black, 0.25);
+
+
+  
+  @media (max-width: 600px) {
+    align-items: center;
+    justify-content: center;
+    margin: 30px auto;
+
+    a{
+      display: inline-block;
+      width: 90%;
+    }
+  }
+
+}
+
+.c-card{
+  background-color: $white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px rgba($black, 0.25);
+  padding: 8px;
+  width: 380px;
+  height: 100px;
+  margin: 10px;
+  transition: all .5s;
+
+  @media (max-width: 600px) {
+    width: 100%;
+    margin: 10px 0; 
+    
+  }
+
+
+  &__text{
+    font-family: $type-2;
+  }
+
+  &__text h3{
+    color: $blue-3;
+    font-size: 1.1em;
+    margin-bottom: 5px;
+  }
+  &__text span{
+    color: $black;
+    font-size: 14px;
+    font-style: italic;
+  }
+  
+  &:hover{
+    background-color: $blue-3;
+    color: $white;
+
+    .c-card__text h3, .c-card__text span, .c-contact-icon{
+      color: $white;
+    }
+
+  }
+
+  
+}

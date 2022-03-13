@@ -1,0 +1,29 @@
+@use '../../1_settings/colors';
+
+.c-header{
+    position: relative;
+    max-width: 100%;
+    grid-area: header;
+}
+
+.c-header--small{
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px;
+    background: $gray-gradient-2;
+    box-shadow: $shadow-1;
+    height: 4em;
+    color: white;
+}
+
+.c-header__logo--small{
+    max-width: 150px;
+}
+
+@media (max-width: 600px) {
+    .c-header__navlist{
+        display: none;
+    }
+}

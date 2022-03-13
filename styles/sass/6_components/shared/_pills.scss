@@ -1,0 +1,62 @@
+@import '../../1_settings/';
+
+.c-projects__item{
+  background-color: #190575;
+  color: $white;
+  font-weight: bold;
+  font-size: 14px;
+  margin-right: 20px;
+  
+  &.js{
+    background-color: $yellow;
+    color: $black;
+  }
+  &.php {
+    background-color: $purple;
+  }
+  
+  &.jv {
+    background-color: $red;
+  }
+
+  &.py {
+    background-color: $blue-5;
+  }
+}
+
+.modal__pillsContainer{
+  margin-bottom: 48px;
+  
+  span{
+    padding: 5px 10px;
+    margin-right: 14px;
+    font-size: 12px;
+    letter-spacing: .5px;
+    font-weight: bold;
+    border-radius: 5px;
+    color: $white;
+  }
+
+  .javascript{
+    background-color: $yellow;
+    color: $black;
+  }
+  .php{
+    background-color: $purple;
+  }
+  .site{
+    background-color: gray;
+  }
+  .html{
+    background-color: $orange;
+  }
+  .css{
+    background-color: $blue-2;
+  }
+  .react{
+    background-color: $blue-1;
+  }
+  .wordpress{
+    background-color: $blue-5;
+  }
+}

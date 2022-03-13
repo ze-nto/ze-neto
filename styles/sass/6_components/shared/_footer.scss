@@ -1,0 +1,49 @@
+.footer{
+  background-color: $gray-5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+  color: $white;
+  font-size: 1em;
+  height: 8vh;
+  grid-area: footer;
+
+
+  @media (max-width: 600px){
+    justify-content: center;
+  }
+}
+
+
+.footer__social{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+  li {
+    display: block;
+    margin: 0 10px;
+    
+    &:hover{
+      color: $blue-2;
+      transform: scale(1.1);
+    }
+    
+  }
+
+  li a{
+    font-family: $type-4;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  li i{
+    color: inherit;
+  }
+}
+
+
+

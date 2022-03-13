@@ -1,0 +1,37 @@
+$blue-1: #00CDFF;
+$blue-2: #00A5FF;
+$blue-3: #005EEE;
+$blue-4: #160963;
+$blue-5: #190575;
+$blue-6: #97d6f3;
+
+$gray-1: #f0eeee; 
+$gray-1b: #e3e3e7;
+$gray-2: #a8a9aa;
+$gray-3: #727374;
+$gray-4: #4e5257;
+$gray-5: #2b3136;
+
+
+$black: #000;
+$black-2:rgb(23, 23, 24);
+$white: #fff;
+
+$red: #c51717;
+$yellow: rgb(241, 221, 40);
+$green: rgb(35, 165, 35);
+$pink: rgb(223, 70, 202);
+$purple: rgb(163, 121, 241);
+$orange: orangered;
+
+$shadow-1: 2px 2px 2px 2px #b6b5b870;
+$shadow-2: 20px 20px 20px rgba(0, 0, 0, 0.25);
+
+/* GRADIENTS */
+$blue-gradient: linear-gradient(171.24deg, #0A57CA 3.91%, #00CDFF 46.05%, #4CDCFF 90%, #0A84C7 110.03%);
+
+$gray-gradient: linear-gradient(90.44deg, #282828 1.37%, #414448 100.67%);
+$gray-gradient-2: linear-gradient(to left, rgb(45, 48, 53) 0%, rgb(83, 86, 88) 50%,  rgb(111, 113, 116)  100%);
+
+$gray-radial: radial-gradient(circle, rgba(134,136,139,1) 0%, rgb(66, 71, 78) 100%);
+$gray-radial-2: radial-gradient(circle, rgba(134,136,139,1) 0%, rgba(30,31,32,1) 100%);

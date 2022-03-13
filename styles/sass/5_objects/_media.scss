@@ -1,0 +1,25 @@
+@import '../1_settings';
+
+.o-media{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  
+  &__image-wrapper{
+    display: block;
+    
+  }
+}
+
+.cv__title-wrapper{
+  margin-bottom: 20px;
+}
+
+
+.projetos{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 50px ;
+  margin-top: 30px;
+}

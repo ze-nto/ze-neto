@@ -1,0 +1,146 @@
+@import '../../1_settings/';
+
+.project-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 45px;
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 0;
+ 
+}
+
+.project-title{
+  text-align: center;
+  align-self: center;
+  margin-top: 50px;
+  font-size: 2em;
+  color:rgb(0, 116, 194)
+}
+
+.project{
+  margin: 20px 20px;
+  padding: 15px;
+  width: 35vw;
+  min-height: 40vh;
+  background-color: $white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid transparent;
+  border-radius: 10px;
+  box-shadow: $shadow-1;
+  transition: all .3s;
+  opacity: 0;
+  animation: showCard .6s forwards;
+
+  @media(max-width: 600px){
+    width: 85vw;
+  }
+}
+
+.project:hover{
+  border: 3px solid $blue-1;
+  box-shadow: 5x 5px 5px 5px rgba($gray-4, 0.438);
+  
+}
+
+.project__head{
+  width: 90%;
+  /* padding-left: 15px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+
+}
+
+.project__links{
+  display: flex;
+  
+}
+
+.project__links-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 5px;
+  color: rgba($black, 0.466);
+}
+
+.project__links-item:hover{
+  color: $black;
+}
+
+.project__links-item span{
+  font-size: 10px;
+  text-transform: uppercase;
+  margin: 3px;
+}
+
+.project__title{
+  font-weight: bold;
+  font-size: 18px;
+  /* text-transform: uppercase; */
+  color: $gray-5;
+}
+
+.project__image{
+  width: 95%;
+  border: 1px solid rgba($gray-4, 0.384);
+  border-radius: 10px;
+}
+
+
+.project__image img{
+  width: 100%;
+  border-radius: 10px;
+}
+
+.project__description{
+  width: 95%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: $gray-4;
+  line-height: 25px;
+}
+
+.project__action{
+  height: 60px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.project__action button{
+  border: none;
+  background-color: $blue-2;
+  color: $white;
+  font-weight: bold;
+  padding: 10px 20px ;
+  border-radius: 5px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all .3s;
+
+  &:hover{
+    background: $blue-1;
+    // font-size: 17px;
+    box-shadow: 5x 5px 5px 5px rgba($gray-4, 0.438);
+  }
+}
+
+@keyframes showCard {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

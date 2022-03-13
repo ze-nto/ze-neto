@@ -1,0 +1,109 @@
+.modal__contentContainer{
+  padding: 40px;
+  display: flex;
+  // justify-content: space-between;
+  z-index: 1000;
+}
+
+.modal__content{
+  flex-grow: 1;
+}
+
+.modal__content h2{
+  color: $blue-3;
+  text-transform: uppercase;
+  letter-spacing: .6px;
+  margin-bottom: 16px;
+  font-size: 2em;
+}
+
+.modal__content h4{
+  margin-bottom: 16px;
+  margin-top: 32px;
+}
+
+.modal__content ul {
+  margin-left: 32px;
+
+  li{
+    margin-bottom: 10px;
+  }
+}
+
+.content img{
+  max-width: 200px;
+  border: 2px solid $gray-2;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.modal__linksWrap{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin-left: -40px;
+  height: 50px;
+  display: flex;
+}
+
+.modal__link{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 100%;
+  color: $white;
+  font-size: 1.5em;
+  cursor: pointer;
+
+  &:hover{
+    opacity: .8; 
+  }
+
+  i{
+    margin-right: 20px;
+  }
+}
+
+.github{
+  background-color: $blue-3;
+  border-bottom-left-radius: 10px ;
+}
+
+.liveproject{
+  background-color: $blue-2;
+  border-bottom-right-radius: 10px ;
+}
+
+.modal__imagesContainer{
+  max-height: 95%;
+  max-width: 40%;
+  margin-right: 20px;
+  // border: 1px solid $gray-2;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  
+  img {
+    margin: 10px;
+    display: block;
+    width: 100px;
+    border-radius: 10px;
+    border: 1px solid $gray-2;
+    margin-bottom: 10px;
+    
+    &:hover{
+      opacity: .8;
+      cursor: pointer;
+      outline: 3px solid $blue-3;
+    }
+  }
+  
+  img:first-child{
+    width: 100%;
+  }
+  img:not(:first-child){
+  height: 80px;
+}
+}

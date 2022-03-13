@@ -11,297 +11,127 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/style/style.css">
-    <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
-    <title>zeneto | desenvolvedor web</title>
+    <link rel="stylesheet" href="./public/style.css">
+    <link rel="shortcut icon" href="./public/img/favicon.ico" type="image/x-icon">
+    <title>Portfólio - ZENETO</title>
 </head>
 <body class="l-2cols">
     <header class="c-header">
         <nav class="c-header__navlist">
             <ul>
-                <a href="index.html" >Portfólio</a>
-                <a href="sobre.html" >Sobre mim</a>
-                <a href="contatos.html">Contatos</a>
-                <!-- <a class="disabled" rel="noopener noreferrer">Blog</a> -->
+                <a href="/index.html" >Portfólio</a>
+                <a href="/sobre.html" >Sobre mim</a>
+                <a href="/contatos.html">Contatos</a>
             </ul>
         </nav>
 
 
-        <img class="c-header__logo" src="assets/img/ze_logofull.png" />
+        <img class="c-header__logo" src="public/img/ze_logofull.png" />
         <span class="c-header__subtitle">DESENVOLVEDOR WEB JR.</span>
     </header>
     
     <main class="portfolio">
-        <!-- <h2 class="project-title">Projetos</h2> -->
+        <h5>Filtre os projetos por tópico</h5>
+        <div class="navigation">
+            <ul>
+              <li class="list active">
+                <a href="#" data-tech="todos">
+                  <span class="filterText">Todos</span>
+                </a>
+              </li>
+              <li class="list" >
+                <a href="#" data-tech="javascript">
+                  <span class="filterText">JS</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="#" data-tech="css">
+                  <span class="filterText">CSS</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="#" data-tech="php">
+                <span class="filterText">PHP</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="#" data-tech="react">
+                    <span class="filterText">React</span>
+                </a>
+              </li>
+              <li class="list">
+                <a href="#" data-tech="wp">
+                    <span class="filterText">WP</span>
+                </a>
+              </li>
+            
+              <li class="list">
+                <a href="#" data-tech="node">
+                    <span class="filterText">Node</span>
+                </a>
+              </li>
+              
+              <li class="list">
+                <a href="#" data-tech="node">
+                    <span class="filterText">Design</span>
+                </a>
+              </li>
+              <div class="indicator"></div>
+            </ul>
+        </div>
         <section class="project-container">
-
-            <article class="project">
-                <div class="project__head">
-                    <span class="project__title">Universidade Para Todos</span>
-                    <div class="project__links">
-                        <a class="project__links-item disabled" href="" target="_blanket" rel="noreferrer">
-                            <i class="fab fa-github"></i>
-                            <span>Código</span>     
-                        </a>
-                        <a class="project__links-item" href="http://upt.uesc.br" target="_blanket">
-                            <i class="fas fa-desktop"></i></fas>
-                            <span>Visualizar</spa>     
-                        </a>    
-                    </div> 
-                </div>
-
-                <div class="project__image">
-                    <img src="assets/img/projects/upt_project.JPG" alt="Imagem do projeto UPT">
-                </div>
-                <div class="project__description">
-                    Website do Programa Universidade Para Todos desenvolvido em HTML, CSS, Javascript, PHP.
-                    Com uso do Materialize.
-                </div>
-                <div class="project__action">
-                    <button>Descrição completa</button>
-                </div>
-            </article>
-
-            <article class="project">
-                <div class="project__head">
-                    <span class="project__title">WildBeast UPT</span>
-                    <div class="project__links">
-                        <a class="project__links-item" href="https://github.com/ze-nto" target="_blanket">
-                            <i class="fab fa-github"></i>
-                            <span>Código</span>     
-                        </a>
-                        <a class="project__links-item" href="https://github.com/ze-nto" target="_blanket">
-                            <i class="fas fa-desktop"></i></fas>
-                            <span>Visualizar</span>     
-                        </a>    
-                    </div> 
-                </div>
-                <div class="project__image">
-                    <img src="assets/img/projects/wildbeast_project.JPG" alt="Imagem do projeto UPT">
-                </div>
-                <div class="project__description">
-                    Website do Programa Universidade Para Todos desenvolvido em HTML, CSS, Javascript, PHP.
-                    Com uso do Materialize.
-                </div>
-                <div class="project__action">
-                    <button>Descrição completa</button>
-                </div>
-            </article>
-
-            <article class="project">
-
-                <div class="project__head">
-                    <span class="project__title">Le Scone Cafeteria</span>
-                    <div class="project__links">
-                        <a class="project__links-item" href="https://github.com/ze-nto" target="_blanket">
-                            <i class="fab fa-github"></i>
-                            <span>Código</span>     
-                        </a>
-                        <a class="project__links-item" href="https://github.com/ze-nto" target="_blanket">
-                            <i class="fas fa-desktop"></i></fas>
-                            <span>Live</span>     
-                        </a>    
-                    </div> 
-                </div>
-                <div class="project__image">
-                    <img src="assets/img/projects/lescone_project.JPG" alt="Imagem do projeto UPT">
-                </div>
-                <div class="project__description">
-                    Website do Programa Universidade Para Todos desenvolvido em HTML, CSS, Javascript, PHP.
-                    Com uso do Materialize.
-                </div>
-                <div class="project__action">
-                    <button>Descrição completa</button>
-                </div>
-
-
-            </article>
-
-            <article class="project">
-
-                <div class="project__head">
-                    <span class="project__title">Livraria VanBook</span>
-                    <div class="project__links">
-                        <a class="project__links-item" href="https://github.com/ze-nto" target="_blanket">
-                            <i class="fab fa-github"></i>
-                            <span>Código</span>     
-                        </a>
-                        <a class="project__links-item" href="https://github.com/ze-nto" target="_blanket">
-                            <i class="fas fa-desktop"></i></fas>
-                            <span>Live</span>     
-                        </a>    
-                    </div> 
-                </div>
-                <div class="project__image">
-                    <img src="assets/img/projects/vanbook_project.JPG" alt="Imagem do projeto UPT">
-                </div>
-                <div class="project__description">
-                    Website do Programa Universidade Para Todos desenvolvido em HTML, CSS, Javascript, PHP.
-                    Com uso do Materialize.
-                </div>
-                <div class="project__action">
-                    <button>Descrição completa</button>
-                </div>
-            </article>
-
-            <article class="project">
-
-                <div class="project__head">
-                    <span class="project__title">Calculadora Química</span>
-                    <div class="project__links">
-                        <a class="project__links-item" href="https://github.com/ze-nto" target="_blanket">
-                            <i class="fab fa-github"></i>
-                            <span>Código</span>     
-                        </a>
-                        <a class="project__links-item" href="https://github.com/ze-nto" target="_blanket">
-                            <i class="fas fa-desktop"></i></fas>
-                            <span>Live</span>     
-                        </a>    
-                    </div> 
-                </div>
-                <div class="project__image">
-                    <img src="assets/img/projects/calculadora_project.JPG" alt="Imagem do projeto UPT">
-                </div>
-                <div class="project__description">
-                    Website do Programa Universidade Para Todos desenvolvido em HTML, CSS, Javascript, PHP.
-                    Com uso do Materialize.
-                </div>
-                <div class="project__action">
-                    <button>Descrição completa</button>
-                </div>
-            </article>
-
-            <article class="project">
-
-                <div class="project__head">
-                    <span class="project__title">CRUD em React</span>
-                    <div class="project__links">
-                        <a class="project__links-item" href="https://github.com/ze-nto" target="_blanket">
-                            <i class="fab fa-github"></i>
-                            <span>Código</span>     
-                        </a>
-                        <a class="project__links-item" href="https://github.com/ze-nto" target="_blanket">
-                            <i class="fas fa-desktop"></i></fas>
-                            <span>Live</span>     
-                        </a>    
-                    </div> 
-                </div>
-                <div class="project__image">
-                    <img src="assets/img/projects/crud_project.JPG" alt="Imagem do projeto UPT">
-                </div>
-                <div class="project__description">
-                    Website do Programa Universidade Para Todos desenvolvido em HTML, CSS, Javascript, PHP.
-                    Com uso do Materialize.
-                </div>
-                <div class="project__action">
-                    <button>Descrição completa</button>
-                </div>
-            </article>
-
-            <article class="project">
-
-                <div class="project__head">
-                    <span class="project__title">Gerenciador de Estoque</span>
-                    <div class="project__links">
-                        <a class="project__links-item" href="https://github.com/ze-nto" target="_blanket">
-                            <i class="fab fa-github"></i>
-                            <span>Código</span>     
-                        </a>
-                        <a class="project__links-item" href="https://github.com/ze-nto" target="_blanket">
-                            <i class="fas fa-desktop"></i></fas>
-                            <span>Live</span>     
-                        </a>    
-                    </div> 
-                </div>
-                <div class="project__image">
-                    <img src="assets/img/projects/almoxarifado_project.JPG" alt="Imagem do projeto UPT">
-                </div>
-                <div class="project__description">
-                    Website do Programa Universidade Para Todos desenvolvido em HTML, CSS, Javascript, PHP.
-                    Com uso do Materialize.
-                </div>
-                <div class="project__action">
-                    <button>Descrição completa</button>
-                </div>
-            </article>
-
-            <article class="project">
-
-                <div class="project__head">
-                    <span class="project__title">Gerenciador de Tarefas</span>
-                    <div class="project__links">
-                        <a class="project__links-item" href="https://github.com/ze-nto" target="_blanket">
-                            <i class="fab fa-github"></i>
-                            <span>Código</span>     
-                        </a>
-                        <a class="project__links-item" href="https://github.com/ze-nto" target="_blanket">
-                            <i class="fas fa-desktop"></i></fas>
-                            <span>Live</span>     
-                        </a>    
-                    </div> 
-                </div>
-                <div class="project__image">
-                    <img src="assets/img/projects/tarefas_project.JPG">
-                </div>
-                <div class="project__description">
-                    Website do Programa Universidade Para Todos desenvolvido em HTML, CSS, Javascript, PHP.
-                    Com uso do Materialize.
-                </div>
-                <div class="project__action">
-                    <button>Descrição completa</button>
-                </div>
-            </article>
         </section>
+        <button class="project__fetch">Mais Projetos</button>
     </main>
     <aside class="techs">
-        <div class="tech__item" >
-            <img  src="./assets/img/tools-img/1.png" alt="Logo do HTML5"> 
-            <span class="tooltip-text">HTML5 semântico, para melhor adequação às regras de acessibilidade</span>
-        </div>
-        <div class="tech__item" >
-            <img  src="./assets/img/tools-img/2.png" alt="Logo do CSS3">
-            <span class="tech tooltip-text">Estilização de páginas web com CSS3 modular</span>
-        </div>
-        <div class="tech__item" >
-            <img  src="./assets/img/tools-img/6.png" alt="Logo do Bootstrap">
-            <span class="tooltip-text">Utilizo em sites institucionais, dando uniformidade e rapidez no desenvoilvimento</span>
-        </div>
-        <div class="tech__item" >
-            <img  src="./assets/img/tools-img/5.png" alt="Logo do Sass">
-            <span class="tooltip-text">Sass é um pre-processador CSS, rapidez e robustez no desenvolvimento modular</span>
-        </div>
-        <div class="tech__item" >
-            <img  src="./assets/img/tools-img/3.png" alt="Logo do JavaScript">
-            <span class="tooltip-text">Usado para melhorar a experiência do usuário. Também utilizo em projetos backend, com Node.js</span>
-        </div>
-        <div class="tech__item" >
-            <img  src="./assets/img/tools-img/9.png" alt="Logo do ReactJS">
-            <span class="tooltip-text">ReactJS é uma biblioteca para Aplicações Web</span>
-        </div>
-        <div class="tech__item" >
-            <img  src="./assets/img/tools-img/11.png" alt="Loogo do jQuery">
-            <span class="tooltip-text">Texto dica</span>
-        </div>
-        <div class="tech__item" >
-            <img  src="./assets/img/tools-img/7.png" alt="Logo do WordPress">
-            <span class="tooltip-text">Criação de templates personalizados com CMS.</span>
-        </div>
-        <div class="tech__item" >
-            <img  src="./assets/img/tools-img/12.png" alt="Logo do PHP">
-            <span class="tooltip-text">Desenvolvimento rápido de pequenas aplicações de cadastro e formulários diversos. Além de páginas dinâmicas.</span>
-        </div>
-        <div class="tech__item" >
-            <img  src="./assets/img/tools-img/8.png" alt="Logo do MongoDB">
-            <span class="tooltip-text">O principal banco de dados NoSQL do mercado</span>
-        </div>
-        <div class="tech__item" >
-            <img  src="./assets/img/tools-img/4.png" alt="Logo do PostgreSQL">
-            <span class="tooltip-text">Texto dica</span>
-        </div>
-        <div class="tech__item" >
-            <img  src="./assets/img/tools-img/10.png" alt="Logo do MySql">
-            <span class="tooltip-text">Texto dica</span>
-        </div>
+			<div class="tech__item" >
+					<img  src="./public/img/tools-img/1.png" alt="Logo do HTML5"> 
+					<span class="tooltip-text">HTML5 semântico, para melhor adequação às regras de acessibilidade</span>
+			</div>
+			<div class="tech__item" >
+					<img  src="./public/img/tools-img/2.png" alt="Logo do CSS3">
+					<span class="tech tooltip-text">Estilização de páginas web com CSS3 modular</span>
+			</div>
+			<div class="tech__item" >
+					<img  src="./public/img/tools-img/6.png" alt="Logo do Bootstrap">
+					<span class="tooltip-text">Utilizo em sites institucionais, dando uniformidade e rapidez no desenvoilvimento</span>
+			</div>
+			<div class="tech__item" >
+					<img  src="./public/img/tools-img/5.png" alt="Logo do Sass">
+					<span class="tooltip-text">Sass é um pre-processador CSS, rapidez e robustez no desenvolvimento modular</span>
+			</div>
+			<div class="tech__item" >
+					<img  src="./public/img/tools-img/3.png" alt="Logo do JavaScript">
+					<span class="tooltip-text">Usado para melhorar a experiência do usuário. Também utilizo em projetos backend, com Node.js</span>
+			</div>
+			<div class="tech__item" >
+					<img  src="./public/img/tools-img/9.png" alt="Logo do ReactJS">
+					<span class="tooltip-text">ReactJS é uma biblioteca para Aplicações Web</span>
+			</div>
+			<div class="tech__item" >
+					<img  src="./public/img/tools-img/11.png" alt="Loogo do jQuery">
+					<span class="tooltip-text">Texto dica</span>
+			</div>
+			<div class="tech__item" >
+					<img  src="./public/img/tools-img/7.png" alt="Logo do WordPress">
+					<span class="tooltip-text">Criação de templates personalizados com CMS.</span>
+			</div>
+			<div class="tech__item" >
+					<img  src="./public/img/tools-img/12.png" alt="Logo do PHP">
+					<span class="tooltip-text">Desenvolvimento rápido de pequenas aplicações de cadastro e formulários diversos. Além de páginas dinâmicas.</span>
+			</div>
+			<div class="tech__item" >
+					<img  src="./public/img/tools-img/8.png" alt="Logo do MongoDB">
+					<span class="tooltip-text">O principal banco de dados NoSQL do mercado</span>
+			</div>
+			<div class="tech__item" >
+					<img  src="./public/img/tools-img/4.png" alt="Logo do PostgreSQL">
+					<span class="tooltip-text">Texto dica</span>
+			</div>
+			<div class="tech__item" >
+					<img  src="./public/img/tools-img/10.png" alt="Logo do MySql">
+					<span class="tooltip-text">Texto dica</span>
+			</div>
     </aside>
     <footer class="footer">            
         <p> Direitos reservados.  &copy; zeneto.dev</p>     
@@ -312,9 +142,18 @@
         </ul>
     </footer>
     <section id="modal" class="modal__container o-modal">
-		<div class="modal__content o-modal__content">
-            <span class="modal__close" onclick="closeModal()">X</span>
+			<div class="modal__contentContainer o-modal__content">
+        <span class="modal__close">X</span>
+				<div class="modal__content"></div>
+				<div class="modal__imagesContainer"></div>
+				<div class="modal__linksWrap">
+					
+				</div>
+			</div>
     </section>
-    <script src="./assets/js/main.js"></script>
+    <script src='public/main.js'></script>
+    <!-- <script type='module' src="public/portfolio.js"></script> -->
+    <script type='module' src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>

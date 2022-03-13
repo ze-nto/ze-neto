@@ -1,343 +1,456 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>zeneto | sobre mim</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;500&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" 
-        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" /> 
-    <link rel="stylesheet" href="./assets/style/style.css">
-    <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Sobre mim - ZENETO</title>
+    <link rel='preconnect' href='https://fonts.gstatic.com'>
+    <link href='https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap' rel='stylesheet'> 
+    <link href='https://fonts.googleapis.com/css2?family=Kanit:wght@100;500&display=swap' rel='stylesheet'> 
+    <link rel='stylesheet' href='https://pro.fontawesome.com/releases/v5.10.0/css/all.css' 
+        integrity='sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p' crossorigin='anonymous' /> 
+    <link rel='stylesheet' href='./public/style.css'>
+    <link rel='shortcut icon' href='./public/img/favicon.ico' type='image/x-icon'>
+		<script src="./js/utils/includes.js"></script>
 </head>
 <body>
-	<header class="c-header--small">
-			<a href="index.html">
-					<img class="c-header__logo--small" src="./assets/img/logo_full.png" alt="">
+	<header class='c-header--small'>
+			<a href='index.html'>
+					<img class='c-header__logo--small' src='./public/img/logo_full.png' alt=''>
 				</a>
-			<nav class="c-header__navlist">
+			<nav class='c-header__navlist'>
 					<ul>
-							<a href="index.html" >Portfólio</a>
-							<a href="sobre.html" >Sobre mim</a>
-							<a href="contatos.html">Contatos</a>
-							<!-- <a class="disabled" rel="noopener noreferrer">Blog</a> -->
+							<a href='/index.html' >Portfólio</a>
+							<a href='/sobre.html' >Sobre mim</a>
+							<a href='/contatos.html'>Contatos</a>
+							<!-- <a class='disabled' rel='noopener noreferrer'>Blog</a> -->
 					</ul>
 			</nav>
 	</header>
 
-	<main class="cv">
-		<section class="cv__header">
-			<!-- <button class="pdf">Curriculo em pdf</button> -->
-				<div class="c-resume">
+	<main class='about'>
+		<section class='about__header'>
+			<a class='about__pdfButton' href="./public/docs/curriculo_jose_pereira.pdf" download><i class="fas fa-file-pdf"></i> Currículo em pdf</a>
+			<div class='about__visibleAbstract'>
+				<div class='about__abstract'>
 						<h2>Olá, Mundo!</h2>
 						<p>
-						Sou desenvolvedor de software em formação. Moro na cidade de Ilhéus, na Bahia. Minha principal área de interesse é 
-						desenvolver aplicações em Javascript Fullstack. Desenvolvo sites e pequenas aplicações em Javascript 
-						e Node.js ou utilizando o Wordpress. 
+							Sou desenvolvedor de software em formação. Moro na cidade de Ilhéus, na Bahia. Minha principal área de interesse é 
+							desenvolver aplicações em JavaScript Fullstack. Desenvolvo sites e pequenas aplicações em JavaScript 
+							e Node.js ou utilizando o Wordpress. 
 						</p>
-						<span><a href="#mais">Mais sobre mim</a></span>
 				</div>
-				<div class="c-profile__image">
-					<!-- <div class="c-profile__circle--blue"></div> -->
-					<img class="o-img" src="./assets/img/perfil.PNG" alt="Foto de perfil Jose">
-			</div>
-		</section>
-		<section class="cv__section-container">
-			<div class="cv__title-wrapper">
-				<h3>Experiência Profissional</h3>
-				<span class="cv__separator"></span>
-			</div>
-			<div class="cv__list-item">
-				<div class="category">
-						Tecnologia da Informação
-				</div>
-				<div>
-					<div class="category__item flexmode">
-						<span class="ano">2020 - 2021</span>
-						<div>
-							<span>Desenvolvedor e Designer no</span>
-							<span class="local">Universidade Para Todos</span>
-							<p>
-								<small>
-									Responsabilidades: o redesign e a manutenção do website do programa, no âmbito da UESC. Além do design de 
-									cards para as redes sociais. Usei como ferramentas: as linguagens HTML, CSS, JavaScript e PHP; também o SASS e o Photoshop
-								</small>
-							</p>
-						</div>
-					</div>
+				<div class='about__image'>
+					<img class='o-img' src='./public/img/perfil.PNG' alt='Foto de perfil Jose'>
 				</div>
 			</div>
-			<div class="cv__list-item">
-					<div class="category">
-							Outras áreas
+			<div class='about_hidedAboutInfo'>
+					<div class='about__profile'>
+						<ul class='personalInfoBox basic-infos'>
+							<li><span>Nome:</span> José Pereira da Silva Neto</li>
+							<li><span>Idade:</span> <span class='age'></span></li>
+							<li><span>Nacionalidade: </span>Brasileira</li>
+							<li><span>Cidade atual: </span>Ilhéus</li>
+						</ul>
 					</div>
 					<div>
-						<div class="category__item">
-								<span class="ano">2012 - Atual</span>
-								<span>Técnico Universitário (Laboratório) na</span>
-								<span class="local">Universidade Estadual de Santa Cruz</span>
-						</div>
-						<div class="category__item">
-								<span class="ano">2010 - 2011</span>
-								<span>Assistente Administrativo no</span>
-								<span class="local">Curso Pedagogia EAD/UAB</span>
-						</div>
+						<ul class="personalInfoBox">
+							<li>O retrato de Dorian Gray, de Oscar Wilde</li> 
+							<li>O Evangelho Segundo Jesus Cristo, de José Saramago</li>
+							<li>Gabriela, Cravo e Canela, de Jorge Amado</li>
+						</ul>
+						
+						<ul class='hobbies-container'>
+							<li class='hobbies'><img src="./public/img/natacao.png" alt="Icone de Natação"/> Natação</li>
+							<li class='hobbies'><img src="./public/img/musculacao.png" alt="Ícone de Musculação"/> Musculação</li>
+							<li class='hobbies'><img src="./public/img/dancando.png" alt="Ícone de Dança"/> Dança</li>
+						</ul>
 					</div>
 			</div>
+			<a class="about__more" href='#mais' data-arrow='▼')>Mais sobre mim</a>
 		</section>
-		<section class="cv__section-container">
-			<div class="cv__title-wrapper">
-				<h3>Formação Acadêmica</h3>
-				<span class="cv__separator"></span>
+		<section class='about__section-container'>
+			<div class='about__sectionHead'>
+				<h3 class='about__sectionTitle'>Experiência Profissional</h3>
+				<span class='about__separator'></span>
 			</div>
-			<div class="cv__list-item">
-				<div class="category">
+			<div class='about__sectionTable'>
+				<div class='about__tableRow'>
+					<div class='about__tableRowCategory'>
 						Tecnologia da Informação
+					</div>
+					<div class='about__tableRowItemsList'>
+						<div class='about__tableRowItem'>
+							<div class='about__tableItemDate'>2020 - 2021</div>
+							<div class='about__tableItemDescription'>
+								<div class='about__tableItemTitle'>
+									<span>Desenvolvedor e Designer no</span>
+									<span class='local'>Universidade Para Todos</span>
+								</div>
+								<div class='about__tableItemJobDetails'>
+									Responsabilidades: o redesign e a manutenção do website do programa, no âmbito da UESC. Além do design de 
+									cards para as redes sociais. Usei como ferramentas: as linguagens HTML, CSS, JavaScript e PHP; também o SASS e o Photoshop.
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
-				<div>
-					<div class="category__item">
-						<span class="ano">2020 - 2022</span>
-						<span>Tecnólogo em Análise e Desenvolvimento de Sistemas</span>
-						<span class="local">- Universidade Estácio de Sá</span>
-					</div>
-					<div class="category__item">
-						<span class="ano">2009</span>
-						<span>Técnico em Montagem e Manutenção de Redes e Computadores</span>
-						<span class="local">- Microlins Itabuna</span>
-					</div>
+				<div class='about__tableRow'>
+						<div class='about__tableRowCategory'>
+								Outras áreas
+						</div>
+
+						<div class='about__tableRowItemsList'>
+							<div class='about__tableRowItem'>
+								<div class='about__tableItemDate'>
+									2012 - Atual
+								</div>
+								<div class='about__tableItemDescription'>
+										<span>Técnico Universitário (Laboratório) na</span>
+										<span class='local'>Universidade Estadual de Santa Cruz</span>
+								</div>
+								</div>
+							<div class='about__tableRowItem'>
+								<div class='about__tableItemDate'>
+									2010 - 2011
+								</div>
+								<div class='about__tableItemDescription'>
+										<span>Assistente Administrativo no</span>
+										<span class='local'>Curso Pedagogia EAD/UAB</span>
+								</div>
+							</div>
+						</div>
 				</div>
 			</div>
-			<div class="cv__list-item">
-				<div class="category">
-						Ciências Biológicas
-				</div>
-				<div>
-					<div class="category__item">
-						<span class="ano">2013 - 2015</span>
-						<span>Mestrado em Zoologia</span>
-						<span class="local">Universidade Estadual de Santa Cruz</span>
+		</section>
+		<section class='about__section-container'>
+			<div class='about__sectionHead'>
+				<h3 class='about__sectionTitle'>Formação Acadêmica</h3>
+				<span class='about__separator'></span>
+			</div>
+			<div class='about__sectionTable'>
+				<div class='about__tableRow'>
+					<div class='about__tableRowCategory'>
+							Tecnologia da Informação
 					</div>
-					<div class="category__item">
-						<span class="ano">2006 - 2012</span>
-						<span>Bacharelado em Ciências Biológicas</span>
-						<span class="local">Universidade Estadual de Santa Cruz</span>
-
+					<div class='about__tableRowItemsList'>
+						<div class='about__tableRowItem'>
+							<div class='about__tableItemDate'>2020 - 2022</div>
+							<div class='about__tableItemDescription'>
+								<div class='about__tableItemTitle'>
+									<span>Tecnólogo em Análise e Desenvolvimento de Sistemas</span>
+									<span class='local'>- Universidade Estácio de Sá</span>
+								</div>
+							</div>
+						</div>
+						<div class='about__tableRowItem'>
+							<div class='about__tableItemDate'>2009</div>
+							<div class='about__tableItemDescription'>
+								<div class='about__tableItemTitle'>
+									<span>Técnico em Montagem e Manutenção de Redes e Computadores</span>
+									<span class='local'>- Microlins Itabuna</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class='about__tableRow'>
+					<div class='about__tableRowCategory'>
+							Ciências <br />Biológicas
+					</div>
+					<div class='about__tableRowItemsList'>
+						<div class='about__tableRowItem'>
+							<div class='about__tableItemDate'>2013 - 2015</div>
+							<div class='about__tableItemDescription'>
+								<div class='about__tableItemTitle'>
+									<span>Mestrado em Zoologia</span>
+									<span class='local'>Universidade Estadual de Santa Cruz</span>
+								</div>
+							</div>
+						</div>
+						<div class='about__tableRowItem'>
+							<div class='about__tableItemDate'>2006 - 2012</div>
+							<div class='about__tableItemDescription'>
+								<div class='about__tableItemTitle'>
+									<span>Bacharelado em Ciências Biológicas</span>
+									<span class='local'>Universidade Estadual de Santa Cruz</span>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-		<section class="cv__section-container">
-			<div class="cv__title-wrapper">
-				<h3>Habilidades</h3>
-				<span class="cv__separator"></span>
+		<section class='about__section-container'>
+			<div class='about__sectionHead'>
+				<h3 class='about__sectionTitle'>Habilidades</h3>
+				<span class='about__separator'></span>
 				<!-- <small>Clique em cada habilidade para ver mais detalhes e os projetos associados a elas</small> -->
 			</div>
-			<div class="cv__list-item">
-				<div class="category--with-icon">
-					<img src="./assets//img/network.png" />
-					<span>Soft Skills</span>	
+			<div class='about__skills'>
+				<div class='about__skillBox langs'>
+					<div class='about__skillTitle'> Linguagens</div>
+					<ul class='about__langsWrap'>
+						<span class='first'>HTML & CSS</span>
+						<span class='second'>JavaScript</span>
+						<span class='second'>TypeScript</span>
+						<span class='third'>PHP</span>
+						<span class='third'>SQL</span>
+						<span class='fourth'>Java</span>
+						<span class='fifth'>Python</span>
+					</ul>
 				</div>
-				<div class="category__item">
-					<details>
-						<summary>Trabalho em equipe</summary>
-						<p> 
-							Em 10 de experiência profissional, já tive oportunidades de trabalhar em diferentes áreas e entender a importância do trabalho em
-							equipe. Pude desenvolver a habilidade de comunicação no <b>atendimento ao público</b> e trabalhando tanto <b>com pessoas a distância </b>quanto com 
-							o	trabalho em sistema de escala - que são dois grandes desafios quanto à manutenção da comunicação.
-							Já tive também, oportunidades de trabalhar em projetos, o que me trouxe a dimensão da organização e divisão de tarefas. 
-							Por fim, <b>fazer pesquisa e escrever artigos</b> a várias mãos, principalmente durante o mestrado, foi outra experiência colaborativa enriquecedora.
-						</p> 
-					</details>
-					<details>
-						<summary>Liderança e gestão de equipe</summary>
-						<p>
-							Já tive a oportunidade de gerenciar um setor com 30 pessoas durante 11 meses. Nesse desafio, pude implementar algumas rotinas necessárias ao
-							setor e estimular equipe que andava desmotivada. Além de bucar soluções para problemas que precisavam ser enfretados estavam negligenciados.
-						</p> 
-					</details>
-					<details>
-						<summary>Comunicação assertiva</summary>
-						<p>
-							A comunicação é a chave para qualquer trabalho bem desenvolvido. Não sou um orador, mas sei me fazer compreender e sou, também, um bom 
-							ouvinte. Possuo domínio da língua portuguesa formal. Busco sempre melhorar minha escrita. Não sou agressivo com as palavras.
-						</p> 
-					</details>
-					<details>
-						<summary>Linguas estrangeiras</summary>
-						<p>
-							Inglês intermediário.
-							Espanhol básico.
-						</p> 
-					</details>
+				
+				<div class='about__skillBox development'>
+					<div class='about__skillTitle'>Desenvolvimento</div>
+					<div class='about__skillListWrap'>
+						<details open>
+							<summary class='skillItem'>GULP</summary>
+							<p>Automação de tarefas como concatenação e compressão de código. Entre outras.</p>
+						</details>
+						
+						<details open>
+							<summary>WEBPACK</summary>
+							<p>Alternativa mais moderna ao Gulp. Automação de tarefas de desenvolvimento.</p>
+						</details>
+
+						<details open>
+							<summary>GIT / GITHUB</summary>
+							<p>Repositórios para versionamento e compartilhamento de código-fonte.</p>
+						</details>
+						
+						<details open>
+							<summary>HUSKY</summary>
+							<p>Para automação e padronização do uso do git, através de <i>hooks</i>.</p>
+						</details>
+						
+						<details open>
+							<summary>DOCKER</summary>
+							<p>Sistema de conteinerização de aplicações para torná-las portáteis.</p>
+						</details>
+						
+					</div>
 				</div>
-			</div>
-			<div class="cv__list-item">
-				<div class="category--with-icon">
-					<img src="./assets//img/software.png" />
-					<span>Development Skills</span>
-				</div>
-				<div class="category__item">
-					<details>
-						<summary>Estrutura e Estilização de páginas Web</summary>
-						<p>
-							Utilização de <b>HTML5</b> para estruturação semântica de páginas web com <b>responsividade e acessibilidade</b>. Uso do <b>CSS3</b> como linguagem de 
-							estilização e animação, com aplicação de <b>BEM e ITCSS</b> como metodologias de nomenclatura e arquitetura.
-							Utilizo o <b>SASS</b> como pre-processador CSS. 
-						</p>
-						<ul class="projetos">
-							<li class="c-projects__item o-pills">To-do List (JS)</li>
-							<li class="c-projects__item o-pills">To-do List (PHP)</li>
-							<li class="c-projects__item o-pills">To-do List (PYTHON)</li>
-						</ul>
-					</details>
-					<details>
-						<summary>Linguagens e técnicas de Programação</summary>
-						<p>
-							As principais linguagens de programção que utilizo são <b>Javascript e TypeScript</b>, com as quais posso programar
-							usando de <b>orientação a objetos e padrões de projetos</b>, programação funcional e programação procedural. Conheço bem a 
-							linguagem <b>PHP</b> e <b>SQL</b>, também possuo conhecimento básico em <b>Java</b> e <b>Python</b>.
-						</p>
-						<ul class="projetos">
-							<li class="c-projects__item o-pills">To-do List (JS)</li>
-							<li class="c-projects__item o-pills">To-do List (PHP)</li>
-							<li class="c-projects__item o-pills">To-do List (PYTHON)</li>
-							<li class="c-projects__item o-pills">To-do List (JAVA)</li>
-							<li class="c-projects__item o-pills">To-do List (SQL)</li>
-						</ul>
-					</details>
-					<details>
-						<summary>Desenvolvimento Frontend</summary>
-						<p>
-							Uso <b>React</b> para construção de aplicações frontend, com <b>Hooks</b> e 
-							programação reativa. Tenho conhecimento <b>básico sobre o Angular</b>.
-							Posso contruir clientes para consumo de APIS RESTfull ou GraphQL, com uso de fetch, axios ou ajax.
-							Utilizando nestas aplicações autenticação com OAuth, JWT, sessões, cookies etc., Logger para monitoramento com Winston e 
-							Documentação com Swagger.
-						</p> 
-						<ul class="projetos">
-							<li class="c-projects__item o-pills js">To-do List</li>
-							<li class="c-projects__item o-pills php">Gerenciador de Tarefas</li>
-							<li class="c-projects__item o-pills js">CalQ</li>
-							<li class="c-projects__item o-pills jv">Book Store</li>
-							<li class="c-projects__item o-pills py">Sala de Reagentes App</li>
-						</ul>
-					</details>              
-					<details>
-						<summary>Desenvolvimento Backend</summary>
-						<p> 
-							Tenho maior domínio com uso do <b>Node.js</b> para desenvolvimento de aplicações backend, utilizando as técnicas e ferramentas:
-							utilizo como framerwork Node para aplicações web CRUD do tipo <b>REST API</b> ou 	<b>GraphQL API</b> o framework <b>Express</b>, 
-							utilizando o <b>Swagger</b> para documentação dos endpoints da aplicação. <b>MongoDB, Sequelize e Postgres ou Mysql</b> para a 
-							persistência de dados. Na automação de tarefas de desenvolvimento utilizo o <b>Webpack</b> e para a padronização do código e dos 
-							commits o <b>ESLint, o Husky e o Lint-staged</b>. Dentre as práticas de seguranção uso a autenticação com <b>JSON Web Token ou OAuth</b> 
-							e o gerenciamento de cabeçalhos HTTP com <b>Helmet</b>.
-						</p> 		
-						<p> 
-							Também possuo conhecimento para desenvolver pequenas aplicaçãoes em <b>PHP, puro ou utilizando o Wordpress como CMS ou sua API.</b>
-							Tenho conecimento básico em <b>Java e no SpringBoot.</b>
-						</p> 
-						<ul class="projetos">
-							<li class="c-projects__item o-pills">To-do List (JS)</li>
-							<li class="c-projects__item o-pills">To-do List (PHP)</li>
-							<li class="c-projects__item o-pills">To-do List (PYTHON)</li>
-							<li class="c-projects__item o-pills">To-do List (JAVA)</li>
-							<li class="c-projects__item o-pills">To-do List (SQL)</li>
-						</ul>
-					</details>
-					<details>
-						<summary> Automação de tarefas de desenvolvimento</summary>
-						<p>Webpack, Husky, Grunt são algumas ferramentas que utilizo para automação de tarefas de desenvolvimento. O Github e o Travis para deploys.</p> 
-						<ul class="projetos">
-							<li class="c-projects__item o-pills">To-do List (JS)</li>
-							<li class="c-projects__item o-pills">To-do List (PHP)</li>
-						</ul>
-					</details>
-					<details>
-						<summary> Versionamento de código com Git e Github</summary>
-						<p>
-							Uso de Git com o GitHub para versionamento do código através da criação de repositórios locais
-							e remotos, uso de branchs e de tags. Além do uso de <b>git hooks com o Husky</b> e o <b>message linter</b> para padronizar
-							e garantir a consistência de estilo do código e das mensagens de commit. Também possuo conhecimento
-							básico no uso de ferramentas do Github para <b>integração contínua</b> com <b>Heroku</b> e <b>Travis-CI</b>.  
-						</p> 
-						<ul class="projetos">
-							<li class="c-projects__item o-pills">To-do List (JS)</li>
-						</ul>
-					</details>
-					<details>
-						<summary>Integração com Banco de dados</summary>
-						<p>Para persistência de dados posso programar com os bancos <b>MongoDB, SQLite3, PostgreSQL e MySQL</b></p> 
-						<ul class="projetos">
-							<li class="c-projects__item o-pills">To-do List (JS)</li>
-							<li class="c-projects__item o-pills">To-do List (PHP)</li>
-							<li class="c-projects__item o-pills">To-do List (JAVA)</li>
-							<li class="c-projects__item o-pills">To-do List (SQL)</li>
-						</ul>
-					</details>
-					<details>
-						<summary> Testes de Software</summary>
-						<p>
-							Uso da metodologia de desenvolvimento TDD (Test-Driven Development), com os frameworks de teste Jest, Cypress, Mocha e Testing library para 
-							teste unitários e testes de integração em aplicações JavaScript
-						</p>
-						<ul class="projetos">
-							<li class="c-projects__item o-pills">To-do List (JS)</li>
-							<li class="c-projects__item o-pills">To-do List (PHP)</li>
-						</ul> 
-					</details> 
+
+				<div class='about__endContainer'>
+					<div class='about__endWrapper'>
+
+						<div class='about__endCard front'>
+							<div class='skill-title'>Ferramentas Front-End</div>
+							<div class='about__skillListWrap'>
+								<details open>
+									<summary>SASS</summary>
+									<p>Pré-processador de CSS, permite o uso de algumas lógicas de programação para acelerarar e automatizar a estilização das páginas.</p>
+								</details>
+								
+								<details open>
+									<summary>REACT</summary>
+									<p>Framework para o desenvolvimento de aplicações em JavaScript.</p>
+								</details>
+								
+								<details open>
+									<summary>ANGULAR</summary>
+									<p>Alternativa ao React. Framework para o desenvolvimento de aplicações em JavaScript.</p>
+								</details>
+								
+								<details open>
+									<summary>BOOTSTRAP</summary>
+									<p>Framework CSS para estilização de sites e aplicações.</p>
+								</details>
+								
+								<details open>
+									<summary>JEST e CYPRESS</summary>
+									<p>Para o desenvolvimento de testes unitários e de integração para aplicações desenvolvidas em JavaScript.</p>
+								</details>
+								
+							</div>
+						</div>
+
+						<div class='about__endCard back'>
+							<div class='skill-title back-title'>Ferramentas Back-End</div>
+							<div class='about__skillListWrap'>
+								<details open>
+									<summary>NODEJS</summary>
+									<p>Criação de aplicações leves e rápidas em JavaScript.</p>
+								</details>
+								
+								<details open>
+									<summary>PHP</summary>
+									<p>Para criação de páginas dinâmicas, em conjunto com JavaScript assíncrono.</p>
+								</details>
+								
+								<details open>
+									<summary>REST API</summary>
+									<p>Arquitetura de API mais usado no mercado atualmente.</p>
+								</details>
+								
+								<details open>
+									<summary>BANCO DE DADOS</summary>
+									<p>SQL: MySQL, PostgreSQL, Sequelize. NoSQL: mongoDB</p>
+								</details>
+								
+								<details open>
+									<summary>DOCUMENTAÇÃO</summary>
+									<p>Swagger. Para manter transparente os recursos disponíveis e como fazer as requisições para a API.</p>
+								</details>
+								
+								<details open>
+									<summary>TESTES</summary>
+									<p>Jest e Cypress como frameworks para testes unitários e de integração.</p>
+								</details>
+								
+								<details open>
+									<summary>WORDPRESS</summary>
+									<p>Uso do wordpress como CMS/API personalizado.</p>
+								</details>
+							</div>
+						</div>
+
+					</div>	
+					<div class='avisoWrap'>
+						<div class='aviso-legend'>
+							<span> Back-end: </span>  
+							<span>Clique para ver</span>
+						</div>
+						<div class='semi'></div>
+					</div>
 				</div>
 			</div>
-			<div class="cv__list-item">
-				<div class="category--with-icon">
-					<img src="./assets/img/ferramentas-de-design.png" />
-					<span>Design Skills</span>
-				</div>
-				<div class="category__item">
-					<details>
-						<summary>Figma</summary>
-						<p>Uso do Figma principalmente na composição e design de UI</p>
-					</details>
-					<details>
-						<summary>Photoshop</summary>
-						<p>Para manipulação de imagem</p>
-					</details>
-					<details>
-							<summary>After Effects</summary>
-							<p>Criação de pequenas animações</p>
-					</details>
-					<details>
-							<summary>Illustrator</summary>
-							<p>Criação de vetores e SVG</p>
-					</details>
-				</div>
-		</div>
 		</section>
-		<section class="cv__section-container">
-			<div class="cv__title-wrapper">
-				<h3>Formação complementar</h3>
-				<span class="cv__separator"></span>
+		<section class='about__section-container'>
+			<div class='about__sectionHead'>
+				<h3 class='about__sectionTitle'>Design</h3>
+				<span class='about__separator'></span>
+			</div>
+			<div class='designGridContainer'>
+				<div class='designGrid'>
+					<div class='grid-item design__tech'>
+						<span class='triangle-bottom'></span>
+						<span class='tech__name-up'>Photoshop</span>
+						<img class='img-up' src='./public/img/ps2.png' alt='' srcset=''>
+					</div>
+					<div class='grid-item'>
+						<img class='design_project' src='./public/img/design/dupla.png' alt='' srcset=''>
+					</div>
+					<div class='grid-item'>
+						<img class='design_project' src='./public/img/design/carro_ios.jpg' alt='' srcset=''>
+					</div>
+					<div class='grid-item'>
+						<img class='design_project' src='./public/img/design/gerlab.png' alt='' srcset=''>
+					</div>
+					<div class='grid-item'>
+						<img class='design_project' src='./public/img/design/seguro.png' alt='' srcset=''>
+					</div>
+					<div class='grid-item design__tech'>
+						<span class='triangle-up'></span>
+						<span class='tech__name-bottom'>Illustrator</span>
+						<img class='img-bottom' src='./public/img/ai.png' alt='' srcset=''>
+					</div>
+					<div class='grid-item'>
+						<img class='design_project gif' src='./public/img/design/enem.gif' alt='' srcset=''>
+					</div>
+					<div class='grid-item design__tech'>
+						<span class='triangle-bottom'></span>
+						<span class='tech__name-up'>After Effects</span>
+						<img class='img-up' src='./public/img/ae.png' alt='' srcset=''>
+					</div>
+					<div class='grid-item'>
+						<img class='design_project gif' src='./public/img/design/tenis.gif' alt='' srcset=''>
+					</div>
+					<div class='grid-item design__tech'>
+						<span class='triangle-up'></span>
+						<span class='tech__name-bottom'>Figma</span>
+						<img class='img-bottom' src='./public/img/fg.png' alt='' srcset=''>
+					</div>
+					<div class='grid-item'>
+						<img class='design_project' src='./public/img/design/patrim.JPG.png' alt='' srcset=''>
+					</div>
+					<div class='grid-item'>
+						<img class='design_project' src='./public/img/design/sitegerlab.png' alt='' srcset=''>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class='about__section-container'>
+			<div class='about__sectionHead'>
+				<h3 class='about__sectionTitle'>Formação Complementar</h3>
+				<span class='about__separator'></span>
+			</div>
+			<div class='slide__filterWrap'>
+				<h4>Filtre por tópico</h3>
+				<div class="navigation">
+					<ul>
+						<li class="list active">
+							<a href="#" data-tech="todos">
+								<span class="filterText">Todos</span>
+							</a>
+						</li>
+						<li class="list" >
+							<a href="#" data-tech="js">
+								<span class="filterText">JS</span>
+							</a>
+						</li>
+						<li class="list">
+							<a href="#" data-tech="css">
+								<span class="filterText">CSS</span>
+							</a>
+						</li>
+						<li class="list">
+							<a href="#" data-tech="php">
+							<span class="filterText">PHP</span>
+							</a>
+						</li>
+						<li class="list">
+							<a href="#" data-tech="react">
+									<span class="filterText">React</span>
+							</a>
+						</li>
+						<li class="list">
+							<a href="#" data-tech="wp">
+									<span class="filterText">WP</span>
+							</a>
+						</li>
+					
+						<li class="list">
+							<a href="#" data-tech="node">
+									<span class="filterText">Node</span>
+							</a>
+						</li>
+						
+						<li class="list">
+							<a href="#" data-tech="node">
+									<span class="filterText">Design</span>
+							</a>
+						</li>
+						<div class="indicator"></div>
+					</ul>
+				</div>
+			</div>
+			<div class='slideWrap'>
+				<ul class='slide'>
+					<li><img class='slide__img' src='./public/img/certificados/acessibilidade.JPG' alt='' srcset=''></li>
+					<li><img class='slide__img' src='./public/img/certificados/css_html.JPG' alt='' srcset=''></li>
+					<li><img class='slide__img' src='./public/img/certificados/docker.JPG' alt='' srcset=''></li>
+					<li><img class='slide__img' src='./public/img/certificados/geradores.JPG' alt='' srcset=''></li>
+					<li><img class='slide__img' src='./public/img/certificados/git.JPG' alt='' srcset=''></li>
+					<li><img class='slide__img' src='./public/img/certificados/js.JPG' alt='' srcset=''></li>
+					<li><img class='slide__img' src='./public/img/certificados/mongo.JPG' alt='' srcset=''></li>
+					<li><img class='slide__img' src='./public/img/certificados/mysql.JPG' alt='' srcset=''></li>
+					<li><img class='slide__img' src='./public/img/certificados/oo.JPG' alt='' srcset=''></li>
+					<li><img class='slide__img' src='./public/img/certificados/php_avanc.JPG	' alt='' srcset=''></li>
+				</ul>
+				<div class='slideButtonWrap'>
+						<button class='slideButton prev'>ᐊ</buttom>
+						<button class='slideButton next'>ᐅ</button>
+					</div>
 			</div>
 		</section>
 	</main>
 	
-	<footer class="footer">            
-		<p> Direitos reservados. &copy; zeneto.dev</p>     
-	</footer>
-	<section class="modal__container o-modal">
-		<div class="modal__content o-modal__content">
-			<h3>Perfil</h3>
-			<ul id="infos">
-				<li>Nome: José Pereira da Silva Neto</li>
-				<!-- <li id="idade">Idade: 35 anos</li> -->
-				<li>Nacionalidade: Brasileira</li>
-				<li>Naturalidade: Ilhéus - BA</li>
-			</ul>
-			
-			<p>Hobbies e preferências</p>
-		</div>
-	</section>
+	<!-- <script src="./js/classes/Slide.js"></script> -->
+	<script src="./public/main.js"></script>
+	<!-- <script src='./public/js/utils/debounce.js'></script> -->
+	<!-- <script type='module' src='./public/slide.js'></script> -->
 </body>
 </html>

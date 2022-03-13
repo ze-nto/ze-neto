@@ -1,0 +1,225 @@
+[
+  {
+    "id": 1,
+    "name": "Universidade Para Todos",
+    "technologies": ["html", "css", "javascript", "php", "materialize", "sass", "ftp"],
+    "description": "Site institucional, sem banco de dados. Desenvolvido com HTML, CSS e Javascript. Uso de PHP para includes.",
+    "mainImage": "public/img/projects/upt/upt_project.JPG",
+    "images": ["public/img/projects/upt/upt_project.JPG", "public/img/projects/upt/upt_project.JPG", "public/img/projects/upt/upt_project.JPG"],
+    "url": "http://upt.uesc.br",
+    "repository": "https://github.com/ze-nto/upt",
+    "topics": ["Site institucional", "Design personalizado.", "Framework CSS para estilização complexa.", "Includes com PHP", "JavaScript para animações e carregamento dinâmico."],
+    "certificates": []
+  },
+  {
+    "id": 2,
+    "name": "Portfólio",
+    "technologies": ["html", "css", "javascript"],
+    "description": "Portfólio de projetos pessoais e profissionais. Desenvolvido em vanila JavaScript, CSS e HTML. Com dados dinâmicos.",
+    "mainImage": "public/img/projects/portfolio/portfolio.JPG",
+    "images": ["public/img/projects/portfolio/portfolio.JPG", "public/img/projects/portfolio/portfolio2.JPG", "public/img/projects/portfolio/portfolio5.JPG", "public/img/projects/portfolio/portfolio6.JPG"],
+    "url": "http://zeneto.dev",
+    "repository": "http://github.com/ze-nto/zeneto",
+    "topics": ["ITCSS", "BEM", "Grid Layout", "Responsividade", "Sass", "JavaScript", "Programação assíncrona"],
+    "certificates": []
+  },
+  {
+    "id": 3,
+    "name": "WildBeast",
+    "technologies": [ "css", "html", "javascript"],
+    "description": "Website Wildbeast",
+    "url": "http://zeneto.dev",
+    "mainImage": "public/img/projects/wildbeast/wildbeast_project.JPG",
+    "repository": "http://github.com/ze-nto",
+    "topics": ["CSS", "Grid Layout CSS"],
+    "certificates": []
+  },
+  {
+    "id": 4,
+    "name": "LeScone Cafeteia",
+    "technologies": ["html", "css", "landing page"],
+    "description": "Website para uma cafeteria",
+    "mainImage": "public/img/projects/lescone/lescone_project.JPG",
+    "url": "http://zeneto.dev",
+    "repository": "http://github.com/ze-nto",
+    "topics": [],
+    "certificates": []
+  },
+  {
+    "id": 5,
+    "name": "Gerenciador de Tarefas PHP",
+    "technologies": ["php", "wp"],
+    "description": "Gerenciador de tarefas em PHP",
+    "mainImage": "public/img/projects/php_tarefas/tarefas_project.JPG",
+    "url": "http://zeneto.dev",
+    "repository": "http://github.com/ze-nto",
+    "topics": [],
+    "certificates": []
+  },
+  {
+    "id": 6,
+    "name": "VanBook",
+    "technologies": ["html", "css", "javascript", "landing page"],
+    "description": "Landing Page para uma Livraria",
+    "mainImage": "public/img/projects/vanbook/vanbook_project.JPG",
+    "url": "http://zeneto.dev",
+    "repository": "http://github.com/ze-nto",
+    "topics": [],
+    "certificates": []
+  },
+  {
+    "id": 7,
+    "name": "Dogs",
+    "technologies": ["react", "wordpress"],
+    "description": "Rede social para cachorros",
+    "mainImage": "public/img/projects/dogs/dogs.JPG",
+    "url": "http://zeneto.dev",
+    "repository": "http://github.com/ze-nto",
+    "topics": [],
+    "certificates": []
+  },
+  {
+    "id": 8,
+    "name": "CRUD em React",
+    "technologies": ["react"],
+    "description": "Rede social para cachorros",
+    "mainImage": "",
+    "url": "http://zeneto.dev",
+    "repository": "http://github.com/ze-nto",
+    "topics": [],
+    "certificates": []
+  },
+  {
+    "id": 9,
+    "name": "Calculadora",
+    "technologies": ["react"],
+    "description": "Rede social para cachorros",
+    "mainImage": "public/img/projects/calc_react/calculadora.JPG",
+    "url": "http://zeneto.dev",
+    "repository": "http://github.com/ze-nto",
+    "topics": [],
+    "certificates": []
+  }, 
+  {
+    "id": 10,
+    "name": "Enquetes",
+    "technologies": ["react"],
+    "description": "Rede social para cachorros",
+    "mainImage": "",
+    "url": "http://zeneto.dev",
+    "repository": "http://github.com/ze-nto",
+    "topics": [],
+    "certificates": []
+  },
+  {
+    "id": 11,
+    "name": "Calqui",
+    "technologies": ["react"],
+    "description": "Rede social para cachorros",
+    "mainImage": "",
+    "url": "http://zeneto.dev",
+    "repository": "http://github.com/ze-nto",
+    "topics": [],
+    "certificates": []
+  },
+  {
+    "id": 12,
+    "name": "Controle de Bens",
+    "technologies": ["css", "react", "wordpress"],
+    "description": "Rede social para cachorros",
+    "mainImage": "public/img/projects/patrimonio/patrimonio.JPG",
+    "url": "http://zeneto.dev",
+    "repository": "http://github.com/ze-nto",
+    "topics": [],
+    "certificates": []
+  },
+  {
+    "id": 13,
+    "name": "Netflix Clone",
+    "technologies": ["react"],
+    "description": "Rede social para cachorros",
+    "mainImage": "public/img/projects/netflix/netflix_Clone.JPG",
+    "url": "http://zeneto.dev",
+    "repository": "http://github.com/ze-nto",
+    "topics": [],
+    "certificates": []
+  },
+  {
+    "id": 14,
+    "name": "Memory Game",
+    "technologies": ["react"],
+    "description": "Rede social para cachorros",
+    "mainImage": "public/img/projects/memory/memory.JPG",
+    "url": "http://zeneto.dev",
+    "repository": "http://github.com/ze-nto",
+    "topics": [],
+    "certificates": []
+  },
+  {
+    "id": 15,
+    "name": "Lista de Tarefas",
+    "technologies": ["react"],
+    "description": "Rede social para cachorros",
+    "mainImage": "public/img/projects/lista_tarefas/projet_tarefas5.JPG",
+    "url": "http://zeneto.dev",
+    "repository": "http://github.com/ze-nto",
+    "topics": [],
+    "certificates": []
+  },
+  {
+    "id": 16,
+    "name": "Jogo da Velha",
+    "technologies": ["react"],
+    "description": "Rede social para cachorros",
+    "mainImage": "",
+    "url": "http://zeneto.dev",
+    "repository": "http://github.com/ze-nto",
+    "topics": [],
+    "certificates": []
+  },
+  {
+    "id": 17,
+    "name": "Instagram Clone",
+    "technologies": ["react"],
+    "description": "Rede social para cachorros",
+    "mainImage": "public/img/projects/insta/instagram.JPG",
+    "url": "http://zeneto.dev",
+    "repository": "http://github.com/ze-nto",
+    "topics": [],
+    "certificates": []
+  },
+  {
+    "id": 18,
+    "name": "Calculadora Química",
+    "technologies": ["react"],
+    "description": "Calculadora para soluções químicas, em diversas unidades de concentração distintas. Feita em vanila Javascript, CSS e HTML.",
+    "mainImage": "public/img/projects/calc_quimica/calculadora_project.JPG",
+    "url": "http://zeneto.dev",
+    "repository": "http://github.com/ze-nto",
+    "topics": [],
+    "certificates": []
+  },
+  {
+    "id": 19,
+    "name": "Cinemateca",
+    "technologies": ["Angular"],
+    "description": "Rede social para cachorros",
+    "mainImage": "",
+    "url": "http://zeneto.dev",
+    "repository": "http://github.com/ze-nto",
+    "topics": ["Aplicação Web", "Angular", "CSS", "HTML"],
+    "certificates": []
+  },
+  {
+    "id": 20,
+    "name": "Course Manager",
+    "technologies": ["Angular"],
+    "description": "Aplicação em Angular para gerenciamento de cursos.",
+    "mainImage": "",
+    "url": "http://zeneto.dev",
+    "repository": "http://github.com/ze-nto",
+    "topics": ["Aplicação Web", "Angular", "CSS", "HTML"],
+    "certificates": ["Digital Innovation One"]
+  }
+  
+]

@@ -1,0 +1,19 @@
+.c-navbar{
+  display: flex;
+  flex-wrap: wrap;
+  text-decoration: none;
+  max-width: 50%;
+  
+  &__item{
+    display: block;
+    margin: 0 20px;
+    text-decoration: none;
+
+  }
+
+  @media (max-width: 600px){
+    .c-header__navlist{
+      display: none;
+    }
+  }
+}

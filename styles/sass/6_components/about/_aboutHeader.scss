@@ -1,0 +1,145 @@
+@import '../../1_settings/';
+
+.about__header{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  margin: 100px 30px;
+  margin-bottom: 150px;
+  background: $white;
+  border-radius: 20px;
+  box-shadow: $shadow-1;
+  transition: all .8s;
+}
+
+.about__visibleAbstract{
+  display: flex;
+}
+
+.about_hidedAboutInfo{
+  display: none;
+  padding: 30px 80px;
+}
+
+.about_showHidedAboutInfo{
+  display: flex;
+  flex-direction: column;
+  animation: showOut .5s ease forwards;
+}
+
+@keyframes showOut{
+  from{
+    transform: translate3d(0px, -50px, 0);
+    opacity: 0;
+  }
+  to{
+    transform: translate3d(0px, 0px, 0);
+    opacity: 1;
+  }
+}
+
+.about__hidedText{
+  display: none;
+}
+
+.about__image{
+    max-width: 300px;
+    border-radius: 50%;
+    margin-right: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about__abstract{
+  max-width: 600px;
+  margin: 100px;
+  line-height: 24px;
+  border-left: 8px solid $blue-2;
+  
+  
+  h2{
+    margin-bottom: 18px;
+    font-size: 2.5em;
+    color: $blue-3;
+    padding-left: 20px;
+  }
+  
+  
+  p{
+    padding-left: 20px;
+    font-size: 1.2em;
+    line-height: 30px;
+  }
+}
+
+.about__more{
+  color: $gray-2;
+  font-weight: bold;
+  text-align: center;
+
+  &:after{
+    content: attr(data-arrow);
+    height: 100%;
+    opacity: .6;
+    margin-left: 5px;
+  }
+}
+
+.hobbies-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  border: 1px solid $gray-1;
+  // border-radius: 20px;
+  margin: 20px;
+  box-shadow: $shadow-1;
+  // width: 50%;
+  height: 150px;
+  justify-self: flex-end;
+  align-self: flex-end;
+}
+
+.hobbies{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $blue-3;
+  margin: 20px;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 140px;
+  padding: 30px;
+  
+
+  img{
+    width: 80%;
+    filter: invert(46%) sepia(0%) saturate(609%) hue-rotate(43deg) brightness(95%) contrast(83%);
+  }
+
+  &:nth-child(2){
+    width: 130px;
+  }
+}
+
+.personalInfoBox{
+  box-shadow: $shadow-1;
+  list-style: none;
+  // width: 50%;
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid $gray-1;
+
+  span:not(:nth-child(2)){
+    font-weight: bold;
+    margin-right: 10px;
+  }
+
+  li{
+    margin: 10px 0; 
+    padding-right: 150px;
+  }
+}
