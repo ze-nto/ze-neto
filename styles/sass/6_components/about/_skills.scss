@@ -89,21 +89,6 @@
   font-size: .8em;
 }
 
-.about__toolWrap{ 
-  // display: flex;
-  // flex-wrap: wrap;
-  justify-content: space-around;
-  list-style: none;
-  font-weight: bold;
-  line-height: 32px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  // text-align: center;
-  margin-bottom: 15px;
-  margin-left: 20px;
-  
-}
-
 
 .about__endContainer{
   position: relative;
@@ -139,23 +124,17 @@
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
+}
 
-  .skill-title{
-    background-color: $gray-1;
-    padding: 10px 20px;
-    position: absolute;
-    margin-top: -75px;
-    color: $blue-3;
-    font-size: 1.5em;
-    font-weight: bold;
-    letter-spacing: .8px;
-
-  }
-  
-  span {
-    text-transform: uppercase;
-    font-weight: bold;
-  }
+.skill-title{
+  background-color: $gray-1;
+  padding: 10px 20px;
+  position: absolute;
+  margin-top: -75px;
+  color: $blue-3;
+  font-size: 1.5em;
+  font-weight: bold;
+  letter-spacing: .8px;
 }
 
 .back{

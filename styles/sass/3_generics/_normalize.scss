@@ -10,7 +10,7 @@
 
 html {
   line-height: 1.15; /* 1 */
-  -webkit-text-size-adjust: 100%; /* 2 */
+  // -webkit-text-size-adjust: 100%; /* 2 */
 }
 
 /* Sections
@@ -317,17 +317,17 @@ textarea {
  * Add the correct display in Edge, IE 10+, and Firefox.
  */
 
-details {
-  display: block;
-}
+// details {
+//   display: block;
+// }
 
-/*
- * Add the correct display in all browsers.
- */
+// /*
+//  * Add the correct display in all browsers.
+//  */
 
-summary {
-  display: list-item;
-}
+// summary {
+//   display: list-item;
+// }
 
 /* Misc
    ========================================================================== */

@@ -18,13 +18,9 @@ details {
       opacity: .6;
       line-height: 25px;
       font-weight: bold;
+      border-radius: 15px;
       color: $white;
+      padding-left: 8px;
     }
-  }
-
-  summary{
-    min-width: 100%;
-    padding-left: 8px;
-    border-radius: 15px;
-  }  
+  } 
 }
