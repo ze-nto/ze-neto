@@ -12,6 +12,10 @@
 
   @media (max-width: 600px){
     justify-content: center;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    padding-top: 10px;
   }
 }
 
@@ -42,6 +46,10 @@
   
   li i{
     color: inherit;
+  }
+
+  @media (max-width: 600px){
+    margin-top: 10px;
   }
 }
 
