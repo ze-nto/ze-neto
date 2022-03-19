@@ -10,6 +10,7 @@
 .about__tableRow{
   display: flex;
   margin-bottom: 50px;
+
 }
 
 .about__tableRowCategory{
@@ -54,4 +55,25 @@
   color: $gray-3;
   font-size: .9em;
   line-height: 24px;
+}
+
+@media (max-width: 600px){
+  .about__tableRow{
+    flex-direction: column;
+  }
+
+  .about__tableRowCategory{
+    max-width: 100%;
+    min-width: 100%;
+    white-space: nowrap;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    text-align: start;
+  }
+
+  .about__tableItemDate{
+    min-width: 140px;
+    max-width: 140px;
+    padding-right: 10px;
+  }
 }

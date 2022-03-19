@@ -1,12 +1,18 @@
 @use '../../1_settings/colors';
 
-.c-header{
+.header{
     position: relative;
     max-width: 100%;
     grid-area: header;
 }
 
-.c-header--small{
+.header__navlist{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header--small{
     grid-area: header;
     display: flex;
     align-items: center;
@@ -14,16 +20,24 @@
     padding: 0 25px;
     background: $gray-gradient-2;
     box-shadow: $shadow-1;
-    height: 4em;
+    height: 5em;
     color: white;
+    
+.header__navlist{
+    position: absolute;
+    top: auto;
+    right: 50px;
+    color: $white;
+    display: flex;
+  }
 }
 
-.c-header__logo--small{
+.header__logo--small{
     max-width: 150px;
 }
 
 @media (max-width: 600px) {
-    .c-header__navlist{
+    .header__navlist{
         display: none;
     }
 }

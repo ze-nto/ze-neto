@@ -1,0 +1,66 @@
+.mobile-btn{
+  position: relative;
+  width: 50px;
+  height: 50px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  border-radius: 5px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  overflow: hidden;
+  z-index: 9999;
+  margin-right: -20px;
+}
+
+.mobile-btn span{
+  position: absolute;
+  width: 40px;
+  height: 3px;
+  background: rgba($gray-1, .7);
+  border-radius: 4px;
+  transition: .5s;
+  top: 10px;
+  left: 5px;
+  align-self: center;
+}
+
+.mobile-btn span:nth-child(1){
+  transform: translateY(-5px);
+}
+
+.mobile-btn span:nth-child(2){
+  transform: translateY(10px);
+}
+.mobile-btn span:nth-child(3){
+  transform: translateY(25px);
+}
+
+.mobile-btn.active span:nth-child(2){
+  transform: translateX(200px);
+  transition-timing-function: ease-in-out;
+}
+
+.mobile-btn.active span:nth-child(1){
+  transform: translateY(0) rotate(-50deg);
+  transform-origin: center center;
+  transition-delay: 0.025s;
+  top: 15px;
+}
+
+.mobile-btn.active span:nth-child(3){
+  transform: translateY(0) rotate(50deg);
+  transform-origin: center center;
+  transition-delay: 0.125s;
+  top: 15px;
+}
+
+@media (max-width: 600px){
+  .mobile-btn{
+    display: block;
+  }
+ 
+  .header__navlist ul{
+    display: none;
+  }
+}

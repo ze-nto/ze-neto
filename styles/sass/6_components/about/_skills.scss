@@ -217,3 +217,31 @@
   margin-left: 50%;
 }
 
+@media (max-width: 600px) {
+  .about{
+    width: 100%;
+    margin: 0;
+  }
+
+  .about__skillBox{
+    width: 90%;
+    padding: 30px;
+  }
+
+  .langs, 
+  .development,
+  .about__endContainer{
+    margin-left: 0;
+    margin: 50px auto; 
+   }
+
+   .langs{
+     margin-top: 100px;
+   }
+
+   .about__skillTitle{
+     margin-top: -55px;
+    //  padding: 0;
+   }
+}
+

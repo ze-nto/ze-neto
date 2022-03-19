@@ -15,17 +15,29 @@
 		<script src="./js/utils/includes.js"></script>
 </head>
 <body>
-	<header class='c-header--small'>
+	<nav class="mobile__menu">
+    <ul>
+      <a href="/index.html" >Portfólio</a>
+      <a href="/sobre.html" >Sobre mim</a>
+      <a href="/contatos.html">Contatos</a>
+    </ul>
+  </nav>
+	<header class='header--small'>
 			<a href='index.html'>
-					<img class='c-header__logo--small' src='./public/img/logo_full.png' alt=''>
+					<img class='header__logo--small' src='./public/img/logo_full.png' alt=''>
 				</a>
-			<nav class='c-header__navlist'>
+			<nav class='header__navlist'>
 					<ul>
 							<a href='/index.html' >Portfólio</a>
 							<a href='/sobre.html' >Sobre mim</a>
 							<a href='/contatos.html'>Contatos</a>
 							<!-- <a class='disabled' rel='noopener noreferrer'>Blog</a> -->
 					</ul>
+					<div class="mobile-btn">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
 			</nav>
 	</header>
 
@@ -42,7 +54,7 @@
 						</p>
 				</div>
 				<div class='about__image'>
-					<img class='o-img' src='./public/img/perfil.png' alt='Foto de perfil Jose'>
+					<img src='./public/img/perfil.png' alt='Foto de perfil Jose'>
 				</div>
 			</div>
 			<div class='about_hidedAboutInfo'>
@@ -373,11 +385,11 @@
 			</div>
 		</section>
 		<section class='about__section-container'>
-			<div class='about__sectionHead'>
+			<div class='about__sectionHead slide-section'>
 				<h3 class='about__sectionTitle'>Formação Complementar</h3>
 				<span class='about__separator'></span>
 			</div>
-			<div class='slide__filterWrap'>
+			<!-- <div class='slide__filterWrap'>
 				<h4>Filtre por tópico</h3>
 				<div class="navigation">
 					<ul>
@@ -426,7 +438,7 @@
 						<div class="indicator"></div>
 					</ul>
 				</div>
-			</div>
+			</div> -->
 			<div class='slideWrap'>
 				<ul class='slide'>
 					<li><img class='slide__img' src='./public/img/certificados/acessibilidade.JPG' alt='' srcset=''></li>

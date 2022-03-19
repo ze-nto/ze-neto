@@ -1,6 +1,6 @@
 @import '../../1_settings/';
 
-.c-header{
+.header{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -15,7 +15,7 @@
   overflow: hidden;
 }
 
-.c-header__subtitle{
+.header__subtitle{
   color: $white;
   font-size: 16px;
   font-family: $type-3;
@@ -35,19 +35,19 @@
   }
 }
 
-.c-header__navlist{
+.header__navlist{
   position: absolute;
-  top: 20px;
+  top: 30px;
   right: 50px;
   color: $white;
- 
+  display: flex;
 }
 
-.c-header__navlist ul{
+.header__navlist ul{
   display: flex;
   justify-content: space-around;
 }
-.c-header__navlist ul a{
+.header__navlist ul a{
   color: $white;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -68,13 +68,13 @@
   }
 }
 
-.c-header__navlist ul a + a {
+.header__navlist ul a + a {
   border-left: 2px solid rgba($gray-2, 0.678);
   padding-left: 15px;
 }
 
 
-.c-header__logo{
+.header__logo{
   width: 500px;
 
   @media (max-width: 600px){
@@ -82,7 +82,7 @@
   }
 }
 
-.c-header__navbar{
+.header__navbar{
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -95,7 +95,7 @@
   overflow: hidden;
 }
 
-.c-header__navbar .header__logo{
+.header__navbar .header__logo{
   width: 180px;
   margin-left: 25px ;
 }

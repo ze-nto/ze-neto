@@ -1,7 +1,7 @@
 @import './about/skills';
 @import './contacts/card';
 @import './shared/header';
-@import './portfolio/cheader';
+@import './portfolio/header';
 @import './contacts/contact-icons';
 @import './contacts/contato-container';
 @import './contacts/contactImage';
@@ -26,3 +26,6 @@
 @import './about/aboutHeader';
 @import './about/pdfButton';
 @import './about/sectionHead';
+
+@import './shared/mobile-btn';
+@import './shared/mobile-menu';

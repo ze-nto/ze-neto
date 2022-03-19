@@ -133,6 +133,10 @@
     // font-size: 17px;
     box-shadow: 5x 5px 5px 5px rgba($gray-4, 0.438);
   }
+
+  @media (max-width: 600px) {
+    width: 100%;
+  }
 }
 
 @keyframes showCard {

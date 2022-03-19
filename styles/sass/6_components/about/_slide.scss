@@ -12,6 +12,10 @@
   }
 }
 
+.slide-section{
+  margin-bottom: 50px;
+}
+
 .slideWrap{
   overflow: hidden;
   position: relative;
@@ -40,6 +44,12 @@
   opacity: .5;
   transform: scale(.8);
   transition: .4s;
+
+  // @media (max-width: 600px){
+  //   .slide li{
+  //     width: 90%;
+  //   }
+  // }
 }
 
 .slide__img{
