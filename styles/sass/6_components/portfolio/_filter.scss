@@ -12,10 +12,6 @@
   justify-content: center;
   border-radius: 10px;
   box-shadow: $shadow-1;
-
-  @media (max-width: 600px) {
-    display: none;
-  }
 }
 
 .portfolio h5 {
@@ -115,4 +111,78 @@
 .navigation ul li:nth-child(8).active ~ .indicator{
   transform: translateX(calc(70px * 7));
   background-color: $pink;
+}
+
+@media (max-width: 600px) {
+  
+  .navigation{
+    height: 50px;
+    align-items: flex-start;
+    width: 150px;
+    overflow: hidden;
+    z-index: 900;
+  }
+  
+  .visible{
+    overflow: visible;
+
+  }
+
+  .navigation ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+    transition: all .6s;
+  }
+
+  .navigation ul li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    width: 150px;
+    height: 50px;
+    z-index: 1;
+    justify-content: center;
+    background-color: $white;
+  }
+
+  .navigation ul li a .filterText{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: normal;
+  }
+
+  .indicator{
+    display: none;
+  }
+
+  .navigation ul li:nth-child(1).active{
+    background: $gray-4;
+  }
+  .navigation ul li:nth-child(2).active{
+    background-color: $yellow;
+  }
+  .navigation ul li:nth-child(3).active{
+    background-color: $blue-1;
+  }
+  .navigation ul li:nth-child(4).active{
+    background-color: $purple;
+  }
+  .navigation ul li:nth-child(5).active{
+    background-color: $blue-1;
+  }
+  .navigation ul li:nth-child(6).active{
+    background-color: $blue-2;
+  }
+  .navigation ul li:nth-child(7).active{
+    background-color: $green;
+  }
+  .navigation ul li:nth-child(8).active{
+    background-color: $pink;
+  }
+  
 }

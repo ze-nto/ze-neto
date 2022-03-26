@@ -145,6 +145,10 @@
 
 
 @media (max-width: 600px) {
+  .about_hidedAboutInfo{
+    padding: 0 0;
+  }
+
   .about__abstract{
     max-width: 100%;
     margin: 10px;
