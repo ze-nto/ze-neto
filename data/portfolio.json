@@ -115,7 +115,7 @@
     "name": "Enquetes",
     "technologies": ["react"],
     "description": "Aplicação web para enquetes sobre o mundo do desenvolvimento. Frontend em React com consumo de uma REST API em Node.JS",
-    "mainImage": "public/img/projects/enquetes/enquetes.JPG",
+    "mainImage": "public/img/projects/enquetes/enquetes.jpg",
     "images": [
       "public/img/projects/enquetes/enquetes.JPG",
       "public/img/projects/enquetes/enquetes2.JPG",
@@ -183,7 +183,7 @@
     "name": "Lista de Tarefas",
     "technologies": ["react"],
     "description": "Rede social para cachorros",
-    "mainImage": "public/img/projects/lista_tarefas/projet_tarefas.JPG",
+    "mainImage": "public/img/projects/lista_tarefas/projet_tarefas.jpg",
     "url": "http://zeneto.dev",
     "repository": "http://github.com/ze-nto",
     "topics": [],
