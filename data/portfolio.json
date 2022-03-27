@@ -72,11 +72,11 @@
     "name": "Dogs",
     "technologies": ["react", "wordpress"],
     "description": "Rede social para postar fotos de cachorros. Front-end em React, consumindo uma API construída com o Wordpress.",
-    "mainImage": "public/img/projects/dogs/dogs.jpg",
+    "mainImage": "public/img/projects/dogs/dogs.JPG",
     "images": [
-      "public/img/projects/dogs/dogs.jpg",
-      "public/img/projects/dogs/dogs.jpg",
-      "public/img/projects/dogs/dogs.jpg"
+      "public/img/projects/dogs/dogs.JPG",
+      "public/img/projects/dogs/dogs.JPG",
+      "public/img/projects/dogs/dogs.JPG"
     ],
     "url": "http://zeneto.dev",
     "repository": "http://github.com/ze-nto",
@@ -115,12 +115,12 @@
     "name": "Enquetes",
     "technologies": ["react"],
     "description": "Aplicação web para enquetes sobre o mundo do desenvolvimento. Frontend em React com consumo de uma REST API em Node.JS",
-    "mainImage": "public/img/projects/enquetes/enquetes.jpg",
+    "mainImage": "public/img/projects/enquetes/enquetes.JPG",
     "images": [
-      "public/img/projects/enquetes/enquetes.jpg",
-      "public/img/projects/enquetes/enquetes2.jpg",
-      "public/img/projects/enquetes/enquetes3.jpg",
-      "public/img/projects/enquetes/enquetes4.jpg"
+      "public/img/projects/enquetes/enquetes.JPG",
+      "public/img/projects/enquetes/enquetes2.JPG",
+      "public/img/projects/enquetes/enquetes3.JPG",
+      "public/img/projects/enquetes/enquetes4.JPG"
     ],
     "url": "http://zeneto.dev",
     "repository": "http://github.com/ze-nto",
@@ -144,8 +144,8 @@
     "name": "Controle de Bens",
     "technologies": ["css", "sass", "react", "wordpress"],
     "description": "Aplicação para controle de bens patrimoniais de uma organização.",
-    "mainImage": "public/img/projects/patrimonio/patrimonio.jpg",
-    "images": ["public/img/projects/patrimonio/patrimonio.jpg"],
+    "mainImage": "public/img/projects/patrimonio/patrimonio.JPG",
+    "images": ["public/img/projects/patrimonio/patrimonio.JPG"],
     "url": "http://zeneto.dev",
     "repository": "http://github.com/ze-nto",
     "topics": ["Aplicação web", "Autenticação com web token", "Wordpress API Rest"],
@@ -156,11 +156,11 @@
     "name": "Netflix Clone",
     "technologies": ["css", "html", "ui"],
     "description": "Clone da interface principal da Netflix. Estudo de propriedades CSS e integração de bibliotecas JavaScript.",
-    "mainImage": "public/img/projects/netflix/netflix_Clone.jpg",
+    "mainImage": "public/img/projects/netflix/netflix_Clone.JPG",
     "images": [
-      "public/img/projects/netflix/netflix_Clone.jpg",
-      "public/img/projects/netflix/netflix_Clone.jpg",
-      "public/img/projects/netflix/netflix_Clone.jpg"
+      "public/img/projects/netflix/netflix_Clone.JPG",
+      "public/img/projects/netflix/netflix_Clone.JPG",
+      "public/img/projects/netflix/netflix_Clone.JPG"
     ],
     "url": "http://zeneto.dev",
     "repository": "http://github.com/ze-nto",
@@ -183,7 +183,7 @@
     "name": "Lista de Tarefas",
     "technologies": ["react"],
     "description": "Rede social para cachorros",
-    "mainImage": "public/img/projects/lista_tarefas/projet_tarefas5.JPG",
+    "mainImage": "public/img/projects/lista_tarefas/projet_tarefas.JPG",
     "url": "http://zeneto.dev",
     "repository": "http://github.com/ze-nto",
     "topics": [],
