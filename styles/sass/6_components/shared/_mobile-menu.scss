@@ -19,30 +19,38 @@
   a{
     display: inline-block;
     color: &white;
-    width: 95%;
-    font-size: 3em;
+    width: 60%;
+    font-size: 2em;
     padding: 10px 20px;
     text-align: center;
     margin: 10px;
     border: 1px solid $white;
-    animation: entrance .3s forwards;
-    animation-delay: .1s;
     opacity: 0;
+    transition: all .3s;
+    animation: entrance .3s forwards;
+    animation-delay: 100s;
   }
   
   a:nth-child(1){
     border-left: 16px solid $blue-1;
+    animation-delay: .5s;
   }
   a:nth-child(2){
     border-left: 16px solid $blue-2;
+    animation-delay: .8s;
   }
   a:nth-child(3){
     border-left: 16px solid $blue-3;
+    animation-delay: .11s;
   }
 
   a:active, a:visited{
     color: $white;
   }
+}
+
+.hidden{
+  overflow: hidden;
 }
 
 .showMenu{
@@ -57,6 +65,6 @@
   
   to{
     opacity: 1;
-    transform:translateX( 0, 0, 0)
+    transform:translate3d(0, 0, 0)
   }
 }

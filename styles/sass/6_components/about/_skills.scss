@@ -157,7 +157,6 @@
 
   @media (max-width: 600px) {
     display: none;  
-    
   }
 }
 
@@ -222,10 +221,21 @@
   margin-left: 50%;
 }
 
+.aviso-mobile{
+  display: none;
+}
+
 @media (max-width: 600px) {
   .about{
     width: 100%;
     margin: 0;
+  }
+
+  .aviso-mobile{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    color: $gray-4
   }
 
   .about__skillBox{
@@ -238,7 +248,15 @@
   .about__endContainer{
     margin-left: 0;
     margin: 50px auto; 
+    max-width: 100%;
    }
+
+  
+  .about__endCard{
+    padding: 20px;
+    padding-top: 55px;
+  
+  }
 
    .langs{
      margin-top: 100px;

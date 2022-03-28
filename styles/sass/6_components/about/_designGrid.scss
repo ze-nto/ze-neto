@@ -2,6 +2,10 @@
   display: flex;
   width: 100%;
   margin: 150px auto;
+
+  @media (max-width: 600px) {
+    margin: 50px auto;
+  }
 }
 
 .designGrid{
@@ -71,6 +75,10 @@
   height: 105%;
   width: auto;
   margin-left: -105px;
+
+  @media (max-width: 600px) {
+   margin-left: -60px;
+  }
 }
 
 .design__tech{

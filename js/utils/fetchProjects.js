@@ -30,10 +30,24 @@ async function fetchProjects() {
 
 function filterInit(){
   const filters = document.querySelectorAll('.list')
-  filters.forEach(filter => {
-    filter.addEventListener('click', fetchFilteredProjects)
-  })
+  if(window.innerWidth > 600){
+    filters.forEach(filter => {
+      filter.addEventListener('click', () => {
+        fetchFilteredProjects()
+      })
+    })
+  }
+  if(window.innerWidth < 600){
+    filters.forEach(filter => {
+      if(!filter.classList.contains('active')){
+        filter.addEventListener('click', () => {
+          fetchFilteredProjects()
+        })
+      }
+    })
+  }
 }
+
 
 async function fetchFilteredProjects() {
   const activeFilter = document.querySelector('.list.active > a')
