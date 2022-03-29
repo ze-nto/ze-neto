@@ -15,6 +15,7 @@ if (window.location.pathname == '/sobre.html'){
   flipCard();
   initPdfButton();
   slideInit();
+  ageCount();
 }
 
 if (window.location.pathname == '/contatos.html'){
