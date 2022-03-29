@@ -239,7 +239,7 @@
   }
 
   .about__skillBox{
-    width: 90%;
+    width: 98%;
     padding: 30px;
   }
 
@@ -263,8 +263,10 @@
    }
 
    .about__skillTitle{
-     margin-top: -55px;
-    //  padding: 0;
+      margin-top: -55px;
+   }
+   .skill-title{
+     font-size: 1.3em;
    }
 }
 
