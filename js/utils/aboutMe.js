@@ -12,7 +12,7 @@ function showAboutMe() {
       more.setAttribute('data-arrow', '▼')
     }
   })
-  age()
+  ageCount()
 }
 
 

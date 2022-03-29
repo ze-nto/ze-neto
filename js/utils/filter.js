@@ -1,3 +1,15 @@
+function filterInit(){
+  const filters = document.querySelectorAll('.list')
+  filters.forEach(filter => {
+    if(!filter.classList.contains('active')){
+      filter.addEventListener('click', fetchFilteredProjects)
+    }else{
+      filter.removeEventListener('click', fetchFilteredProjects)
+    }
+  })
+}
+
+
 
 function activeLink(){
   const list = document.querySelectorAll('.list');

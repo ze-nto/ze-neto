@@ -1,4 +1,4 @@
-function age() {
+function ageCount() {
   const age = document.querySelector('.age')
   const thisYear = new Date().getFullYear()  
   if(new Date().getMonth >= 8){

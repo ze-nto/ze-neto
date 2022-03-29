@@ -1,11 +1,6 @@
 let currentLastProjectIndex = 4
 let deletedNumber = 4
 
-async function getData() {
-  let response  = await fetch('./data/portfolio.json');
-  let data = await response.json();
-  return data
-}
 
 async function fetchProjects() {
   let dados = []
@@ -23,93 +18,37 @@ async function fetchProjects() {
     deletedNumber = deletedNumber + 4
   }
   currentLastProjectIndex = currentLastProjectIndex + 4
-  createProjectCard(projects)
+  feedProjectCard(projects)
   filterInit()
 }
-
-
-
-function filterInit(){
-  const filters = document.querySelectorAll('.list')
-  filters.forEach(filter => {
-    if(!filter.classList.contains('active')){
-      filter.addEventListener('click', fetchFilteredProjects)
-    }else{
-      filter.removeEventListener('click', fetchFilteredProjects)
-    }
-  })
-}
-
 
 async function fetchFilteredProjects() {
   const activeFilter = document.querySelector('.list.active > a')
   let techFilter = activeFilter.getAttribute('data-tech')
   const projectContainer = document.querySelector('.project-container')
-  let response  = await fetch('./data/portfolio.json');
-  let dados = await response.json();
   if(techFilter == 'todos'){
     currentLastProjectIndex = 4
     deletedNumber = 4
     projectContainer.innerHTML = ''
-    fetchProjects()
+     await fetchProjects()
   }else{
     projectContainer.innerHTML = ''
-    dados = dados.filter( project => project.technologies.includes(techFilter))
-    createProjectCard(dados)
+    let dados = data.filter(project => project.technologies.includes(techFilter))
+    feedProjectCard(dados)
   }
   filterInit()
 }
 
-
-function createProjectCard(projects){
-  projects.forEach( project => {
-    if(project.mainImage == ""){
-      project.mainImage = "public/img/no-image.png"
-    }
-    const projectContainer = document.querySelector('.project-container')
-    let card = document.createElement('article')
-    card.classList.add('project')
-    card.id = project.id
-    const cardContent = `
-      <div class="project__head">
-        <span class="project__title">${project.name}</span>
-        <div class="project__links">
-          <a class="project__links-item disabled" href="${project.repository}" target="_blanket" rel="noreferrer">
-              <i class="fab fa-github"></i>
-              <span>Código</span>     
-          </a>
-          <a class="project__links-item" href="${project.url}" target="_blanket">
-              <i class="fas fa-desktop"></i></fas>
-              <span>Visualizar</spa>     
-          </a>    
-        </div> 
-      </div>
-      <div class="project__image">
-          <img src="${project.mainImage}" alt="Screenshot do projeto ${project.name}">
-      </div>
-      <div class="project__description">
-          ${project.description}
-      </div>
-      <div class="project__action">
-          <button>Descrição completa</button>
-      </div>
-    `
-    card.innerHTML = cardContent
-    projectContainer.appendChild(card)
-    activeButtons()
-    })
-}
-
-function projectFetchButtonInit(){
+async function projectFetchButtonInit(){
   const ProjectFetch = document.querySelector('.project__fetch')
   
-  ProjectFetch.addEventListener('click', () => {
+  ProjectFetch.addEventListener('click', async () => {
     const activeFilter = document.querySelector('.list.active > a')
     let techFilter = activeFilter.getAttribute('data-tech')
     if(techFilter == 'todos'){
-      fetchProjects()
+      await fetchProjects()
     } else {
-      fetchFilteredProjects(techFilter)
+      await fetchFilteredProjects(techFilter)
     }
   })
 }
