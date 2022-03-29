@@ -24,28 +24,20 @@ async function fetchProjects() {
   }
   currentLastProjectIndex = currentLastProjectIndex + 4
   createProjectCard(projects)
+  filterInit()
 }
 
 
 
 function filterInit(){
   const filters = document.querySelectorAll('.list')
-  if(window.innerWidth > 600){
-    filters.forEach(filter => {
-      filter.addEventListener('click', () => {
-        fetchFilteredProjects()
-      })
-    })
-  }
-  if(window.innerWidth < 600){
-    filters.forEach(filter => {
-      if(!filter.classList.contains('active')){
-        filter.addEventListener('click', () => {
-          fetchFilteredProjects()
-        })
-      }
-    })
-  }
+  filters.forEach(filter => {
+    if(!filter.classList.contains('active')){
+      filter.addEventListener('click', fetchFilteredProjects)
+    }else{
+      filter.removeEventListener('click', fetchFilteredProjects)
+    }
+  })
 }
 
 
@@ -65,6 +57,7 @@ async function fetchFilteredProjects() {
     dados = dados.filter( project => project.technologies.includes(techFilter))
     createProjectCard(dados)
   }
+  filterInit()
 }
 
 

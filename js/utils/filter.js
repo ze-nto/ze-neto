@@ -47,6 +47,7 @@ function mobileFilterInit(){
     })
   )
 
+
   function removeActive(){
     menuItems.forEach(menuItem => menuItem.classList.remove('active'))
   }
