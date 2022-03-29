@@ -76,7 +76,7 @@ function createProjectCard(projects){
         <div class="project__links">
           <a class="project__links-item disabled" href="${project.repository}" target="_blanket" rel="noreferrer">
               <i class="fab fa-github"></i>
-              <span>Ver Código</span>     
+              <span>Código</span>     
           </a>
           <a class="project__links-item" href="${project.url}" target="_blanket">
               <i class="fas fa-desktop"></i></fas>
