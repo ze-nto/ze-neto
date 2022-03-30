@@ -58,8 +58,13 @@
 }
 
 @media (max-width: 600px){
+  .about__sectionTable{
+    margin: 40px auto;
+  }
+
   .about__tableRow{
     flex-direction: column;
+    margin-bottom: 30px;
   }
 
   .about__tableRowItem{
