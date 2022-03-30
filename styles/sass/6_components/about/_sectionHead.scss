@@ -10,7 +10,6 @@
   white-space: nowrap;
   // border: 1px solid rgba($gray-2, .5);
 
-
     &::before{
       content: ' ';
       position: absolute;
@@ -47,4 +46,18 @@
   min-width: 70%;
   flex-grow: 1;
   height: 5px;
+}
+
+@media (max-width: 600px){
+  .about__sectionTitle {  
+    padding-left: 0;
+
+    &::before, &::after{
+      display: none;
+    }
+  }
+
+  .about__separator{
+    margin-left: 0px;
+  }
 }
