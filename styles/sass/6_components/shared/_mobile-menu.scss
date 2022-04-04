@@ -28,6 +28,10 @@
     padding: 10px 20px;
     text-align: center;
     transition: all .3s;
+
+    &:hover{
+      background: #97d6f3 !important;
+    }
   }
   
   a:nth-child(1){
@@ -44,6 +48,8 @@
   a:active, a:visited{
     color: $white;
   }
+
+  
 }
 
 .hidden{

@@ -45,19 +45,23 @@
   transform: translateY(0) rotate(-50deg);
   transform-origin: center center;
   transition-delay: 0.025s;
-  top: 10px;
+  top: 9px;
 }
 
 .mobile-btn.active span:nth-child(3){
   transform: translateY(0) rotate(50deg);
   transform-origin: center center;
   transition-delay: 0.125s;
-  top: 10px;
+  top: 9px;
 }
 
 @media (max-width: 600px){
   .mobile-btn{
     display: block;
+
+    &:hover{
+      background: rgba(0, 0, 0, .5)
+    }
   }
  
   .header__navlist ul{

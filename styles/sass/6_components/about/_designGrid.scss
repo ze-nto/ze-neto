@@ -25,34 +25,11 @@
 .grid-item{
   position: relative;
   overflow: hidden;
-}
 
-
-.tech__name-up{
-  position: absolute;
-  right: 10px;
-  top: 10px;
-  font-size: 1.5em;
-  color: $white;
-  font-weight: bold;
-  letter-spacing: 1px;
-}
-.tech__name-bottom{
-  position: absolute;
-  left: 10px;
-  bottom: 10px;
-  font-size: 1.5em;
-  color: $white;
-  font-weight: bold;
-  letter-spacing: 1px;
-}
-
-.img-up{
-  box-shadow: -10px 10px 0 0 $blue-2;
-}
-
-.img-bottom{
-  box-shadow: 10px -10px 0 0 $blue-2;
+  @media (max-width: 600px) {
+    max-height: 140px;
+    overflow: hidden;
+  }
 }
 
 .design_project{
@@ -80,11 +57,13 @@
 
   @media (max-width: 600px) {
    margin-left: -60px;
+   height: 140px;
+   max-height: 140px;
+  //  width: 140px
   }
 }
 
 .design__tech{
   opacity: 1;
   filter: none;
-
 }

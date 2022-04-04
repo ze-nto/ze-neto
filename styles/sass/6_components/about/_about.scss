@@ -1,3 +1,14 @@
+
+.about__section-container{
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px;
+  
+    @media (max-width: 600px) {
+      margin: 0 15px;
+    }
+}
+
 .about{
   margin: 0 100px; 
 
